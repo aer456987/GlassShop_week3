@@ -1,0 +1,317 @@
+.header_title, .service_items, .products, .cooperative_products, .client_recommend, .contact_us
+  h2
+    +font(48px, 1.5)
+    margin-bottom: 40px
+    text-align: center
+    +ipad
+      font-size: 32px
+      margin-bottom: 32px
+    +mobile
+      +font(24px, 2)
+      margin-bottom: 20px
+
+.page_padding
+  padding-top: 60px
+  padding-bottom: 80px
+  +ipad
+    padding-top: 40px
+    padding-bottom: 56px
+  +mobile
+    padding-top: 32px
+    padding-bottom: 40px
+
+// 表頭
+.header_title
+  background-image: url('../images/banners/banner.png')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+
+.header_content
+  height: 840px
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  text-align: right
+  h1
+    +font(64px, 1.5)
+  span
+    +font(36px, 1.5)
+
+  +ipad
+    h1
+      font-size: 48px
+    span
+      font-size: 20px
+
+  +mobile
+    height: 394px
+    h1
+      +font(32px, 2.25)
+    span
+      +font(16px, 1.875)
+
+
+// 服務介紹
+.service_items
+  background: rgba($color-red, .05)
+  .page_padding
+    +ipad
+      padding-left: 77px
+      padding-right: 77px
+    +mobile
+      padding-left: 50px
+      padding-right: 50px
+
+.service_lists
+  display: flex
+  justify-content: space-between
+  +ipad
+    flex-wrap: wrap
+  +mobile
+    justify-content: center
+
+.service_list_item
+  max-width: 24%
+  display: flex
+  flex-direction: column
+  align-items: center
+  +ipad
+    max-width: 47%
+  +mobile
+    max-width: 100%
+
+.service_list_item:nth-child(1), .service_list_item:nth-child(2)
+  +ipad
+    margin-bottom: 32px
+
+.service_list_item:not(:last-child),
+  +mobile
+    margin-bottom: 32px
+
+.service_list_icon
+  +box-size(100px, 100px)
+  display: flex
+  align-items: center
+
+.service_list_item_title
+  +font(24px, 1.5)
+  padding-top: 16px
+  padding-bottom: 8px
+
+.service_list_item_text
+  +font(16px, 1.5)
+
+
+// 產品分類 
+.product_img
+  max-width: 57%
+  +ipad
+    max-width: 50%
+  +mobile
+    max-width: 100%
+    img
+      width: 110%
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+
+.product_list_item, .product_content
+  display: flex
+  align-items: center
+
+.product_list_item
+  overflow: hidden
+  +mobile
+    position: relative
+    justify-content: center
+
+.product_list_item:nth-child(2)
+  flex-direction: row-reverse
+  +ipad
+    flex-direction: row
+
+.product_list_item:not(:last-child)
+  margin-bottom: 32px
+  +ipad
+    margin-bottom: 8px
+
+.product_content
+  margin: 0 30px
+  +mobile
+    position: absolute
+
+.product_icon
+  +box-size(48px, 48px)
+  display: block
+  margin-right: 8px
+  +ipad
+    +box-size(36px, 36px)
+
+.product_text
+  +font(48px, 1.5)
+  text-transform: uppercase
+  +ipad
+    +font(28px, 2.57)
+
+
+// 聯合產品
+.cooperative_products
+  background-image: url('../images/bg.png')
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+
+.cooperative_lists
+  display: flex
+  justify-content: space-between
+  +mobile
+    flex-wrap: wrap
+
+.cooperative_list_item
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 49%
+  position: relative
+  background: $color-white
+  +mobile
+    width: 100%
+
+.cooperative_list_item:first-child
+  +mobile
+    margin-bottom: 16px
+
+.cooperative_img
+  opacity: .5
+  +mobile
+    width: 110%
+
+.cooperative_text
+  +font(72px, 1.5)
+  position: absolute
+  z-index: 2
+  +ipad
+    +font(32px, 0.78)
+
+
+// 顧客推薦
+.client_recommend_list
+  display: flex
+  justify-content: space-between
+  +ipad
+    flex-wrap: wrap
+
+.client_recommend_card
+  max-width: 23%
+  border: solid 1px $color-gray-light
+  border-radius: 4px
+  box-shadow: 0 2px 6px $color-gray-light
+  overflow: hidden
+  +ipad
+    max-width: 48%
+  +mobile
+    max-width: 100%
+
+.client_recommend_card:nth-child(1),
+.client_recommend_card:nth-child(2)
+  +ipad
+    margin-bottom: 32px
+
+.client_recommend_card:not(:last-child)
+  +mobile
+    margin-bottom: 32px
+
+.client_recommend_card_content
+  height: 204px
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  justify-content: space-between
+  padding: 16px
+  +ipad
+    padding-left: 24px
+    padding-right: 24px
+
+.client_recommend_card_title, .client_recommend_card_date
+  +font(14px, 1.5)
+
+.client_recommend_card_title
+  margin-bottom: 8px
+
+.client_recommend_card_text
+  +font(16px, 1.5)
+
+.client_recommend_card_date
+  color: $color-gray
+
+// 聯絡表單
+.contact_us
+  background: rgba($color-red, .05)
+  .page_padding
+    +mobile
+      padding-top: 30px
+  h2
+    margin-bottom: 24px
+    +mobile
+      margin-bottom: 20px
+
+.contact_us_text
+  +font(20px, 1.5)
+  margin-bottom: 20px
+  +ipad
+    +font(16px, 1.5)
+    margin-bottom: 16px
+  +mobile
+    margin-bottom: 8px
+
+.contact_us_content
+  max-width: 60%
+  margin: 0 auto
+  +mobile
+    max-width: 100%
+
+.contact_form_item
+  margin-bottom: 16px
+  +ipad
+    margin-bottom: 8px
+
+.contact_form_label
+  +font(16px, 1.5)
+  margin-bottom: 4px
+  +ipad
+    +font(14px, 1.5)
+
+.contact_form_input
+  +font(16px, 1.5)
+  width: 100%
+  padding: 12px 16px
+  border: solid 1px $color-black
+  background: transparent
+
+.contact_form_checkbox
+  display: flex
+  margin-bottom: 40px
+  input
+    +box-size(15px, 15px)
+  label
+    display: block
+
+  +ipad
+    margin-bottom: 20px
+
+
+.contact_form_buttons
+  text-align: center
+
+.contact_form_submit_button
+  width: 50%
+  border: none
+  padding: 16px
+  color: $color-white
+  background: $color-red
+  transition-duration: .3s
+  &:hover
+    background: darken($color-red, 5)
+    cursor: pointer
+    transition-duration: .3s
