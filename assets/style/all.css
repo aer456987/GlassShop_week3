@@ -64,8 +64,7 @@ img {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 15px;
-  border: solid 1px #707070; }
+  padding: 0 15px; }
   @media (max-width: 992px) {
     .container {
       max-width: 100%;
