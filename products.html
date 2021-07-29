@@ -5,24 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>第二週作業-第二次</title>
-  <link rel="stylesheet" href="./assets/style/initStyle.css">
+  <title>SEE IT CLEARLY - 系列鏡框</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
   <header class="header_navbar">
-    <nav class="nav">
-      <a href="./index.html" class="nav_logo_link">
-        <img
-          src="./assets/images/logos/logo.png"
-          alt="logo"
-          class="nav_logo_img"
-        >
-      </a>
-      <ul class="navbar">
+    <nav class="nav
+      d_flex
+      flex_justify_space_between
+      flex_align_items_center"
+    >
+      <h1 class="nav_logo_link">
+        <a href="index.html">
+          SEE IT CLEARLY
+        </a>
+      </h1>
+      <ul class="navbar d_flex">
         <li class="navbar_item">
           <a
-            href="./products.html"
+            href="products.html"
             class="navbar_item_link"
           >
             系列鏡框
@@ -30,7 +32,7 @@
         </li>
         <li class="navbar_item">
           <a
-            href=""
+            href="storeAddress.html"
             class="navbar_item_link"
           >
             門市據點
@@ -60,7 +62,7 @@
 <nav class="product_navbar">
   <div class="container">
     <form>
-      <ul class="product_navbar_form">
+      <ul class="d_flex">
 
         <li class="product_navbar_item">
           <input
@@ -73,7 +75,11 @@
           >
           <label
             for="product_optical"
-            class="product_navbar_label"
+            class="js_product_navbar_label
+              product_navbar_label
+              d_flex
+              flex_justify_center
+              fw_md"
           >
           <span class="product_navbar_icon">
             <img
@@ -95,7 +101,11 @@
           >
           <label
             for="product_sunglasses"
-            class="product_navbar_label"
+            class="js_product_navbar_label
+              product_navbar_label
+              d_flex
+              flex_justify_center
+              fw_md"
           >
           <span class="product_navbar_icon">
             <img
@@ -113,11 +123,15 @@
             name="product_navbar_menu"
             value="product_functional"
             id="product_functional"
-            class="product_navbar_radio"
+            class="fw_md product_navbar_radio"
           >
           <label
             for="product_functional"
-            class="product_navbar_label"
+            class="js_product_navbar_label
+              product_navbar_label
+              d_flex
+              flex_justify_center
+              fw_md"
           >
           <span class="product_navbar_icon">
             <img
@@ -134,288 +148,27 @@
 </nav>
 
 <section>
-  <ul class="product_banners_lists">
-    <li class="product_banner">
-      <img
-        src="./assets/images/banners/banner-1.png"
-        alt="banner 圖片2"
-        class="product_banner_img"
-      >
-    </li>
-    <li class="product_banner">
-      <img
-        src="./assets/images/banners/banner-2.png"
-        alt="banner 圖片3"
-        class="product_banner_img"
-      >
-    </li>
+  <ul class="js_product_banners_lists product_banners_lists">
   </ul>
 </section>
 
 <main class="prodocuts_page_content">
   <div class="container">
-    <h1>Celluloid Combi</h1>
+    <h2 class="js_prodocuts_title fw_md">Celluloid Combi</h2>
     <h3>賽璐珞鈦金屬混合鏡框</h3>
 
-    <ul class="prodocuts_list">
-      <li class="prodocuts_list_item">
-        <div class="prodocuts_list_img">
-          <img
-            src="./assets/images/product_Imgs/products-1.jpg"
-            alt="商品圖片_1"
-          >
-        </div>
-        <div class="prodocuts_list_content">
-          <h2 class="prodocuts_list_content_title">
-            bj41600s
-          </h2>
-          <p class="prodocuts_list_content_price text_color_red">
-            ntd3,490
-          </p>
-          <ul class="prodocut_colors">
-            <li class="prodocut_color prodocut_color_brown_dark"></li>
-            <li class="prodocut_color prodocut_color_brown"></li>
-          </ul>
-        </div>
-      </li>
+    <ul class="js_prodocuts_list
+      d_flex
+      flex_wrap_wrap
+      flex_justify_space_between"
+    ></ul>
 
-      <li class="prodocuts_list_item">
-        <div class="prodocuts_list_img">
-          <img
-            src="./assets/images/product_Imgs/products-2.jpg"
-            alt="商品圖片_1"
-          >
-        </div>
-        <div class="prodocuts_list_content">
-          <h2 class="prodocuts_list_content_title">
-            bj41600s
-          </h2>
-          <p class="prodocuts_list_content_price text_color_red">
-            ntd3,490
-          </p>
-          <ul class="prodocut_colors">
-            <li class="prodocut_color prodocut_color_brown_dark"></li>
-            <li class="prodocut_color prodocut_color_brown"></li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="prodocuts_list_item">
-        <div class="prodocuts_list_img">
-          <img
-            src="./assets/images/product_Imgs/products-3.jpg"
-            alt="商品圖片_1"
-          >
-        </div>
-        <div class="prodocuts_list_content">
-          <h2 class="prodocuts_list_content_title">
-            bj41600s
-          </h2>
-          <p class="prodocuts_list_content_price text_color_red">
-            ntd3,490
-          </p>
-          <ul class="prodocut_colors">
-            <li class="prodocut_color prodocut_color_brown_dark"></li>
-            <li class="prodocut_color prodocut_color_brown"></li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="prodocuts_list_item">
-        <div class="prodocuts_list_img">
-          <img
-            src="./assets/images/product_Imgs/products-4.jpg"
-            alt="商品圖片_1"
-          >
-        </div>
-        <div class="prodocuts_list_content">
-          <h2 class="prodocuts_list_content_title">
-            bj41600s
-          </h2>
-          <p class="prodocuts_list_content_price text_color_red">
-            ntd3,490
-          </p>
-          <ul class="prodocut_colors">
-            <li class="prodocut_color prodocut_color_brown_dark"></li>
-            <li class="prodocut_color prodocut_color_brown"></li>
-          </ul>
-        </div>
-      </li>
-
-
-      <li class="prodocuts_list_item">
-        <div class="prodocuts_list_img">
-          <img
-            src="./assets/images/product_Imgs/products-5.jpg"
-            alt="商品圖片_1"
-          >
-        </div>
-        <div class="prodocuts_list_content">
-          <h2 class="prodocuts_list_content_title">
-            bj41600s
-          </h2>
-          <p class="prodocuts_list_content_price text_color_red">
-            ntd3,490
-          </p>
-          <ul class="prodocut_colors">
-            <li class="prodocut_color prodocut_color_brown_dark"></li>
-            <li class="prodocut_color prodocut_color_brown"></li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="prodocuts_list_item">
-        <div class="prodocuts_list_img">
-          <img
-            src="./assets/images/product_Imgs/products-6.jpg"
-            alt="商品圖片_1"
-          >
-        </div>
-        <div class="prodocuts_list_content">
-          <h2 class="prodocuts_list_content_title">
-            bj41600s
-          </h2>
-          <p class="prodocuts_list_content_price text_color_red">
-            ntd3,490
-          </p>
-          <ul class="prodocut_colors">
-            <li class="prodocut_color prodocut_color_brown_dark"></li>
-            <li class="prodocut_color prodocut_color_brown"></li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="prodocuts_list_item">
-        <div class="prodocuts_list_img">
-          <img
-            src="./assets/images/product_Imgs/products-2.jpg"
-            alt="商品圖片_1"
-          >
-        </div>
-        <div class="prodocuts_list_content">
-          <h2 class="prodocuts_list_content_title">
-            bj41600s
-          </h2>
-          <p class="prodocuts_list_content_price text_color_red">
-            ntd3,490
-          </p>
-          <ul class="prodocut_colors">
-            <li class="prodocut_color prodocut_color_brown_dark"></li>
-            <li class="prodocut_color prodocut_color_brown"></li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="prodocuts_list_item">
-        <div class="prodocuts_list_img">
-          <img
-            src="./assets/images/product_Imgs/products-3.jpg"
-            alt="商品圖片_1"
-          >
-        </div>
-        <div class="prodocuts_list_content">
-          <h2 class="prodocuts_list_content_title">
-            bj41600s
-          </h2>
-          <p class="prodocuts_list_content_price text_color_red">
-            ntd3,490
-          </p>
-          <ul class="prodocut_colors">
-            <li class="prodocut_color prodocut_color_brown_dark"></li>
-            <li class="prodocut_color prodocut_color_brown"></li>
-          </ul>
-        </div>
-      </li>
-
-
-      <li class="prodocuts_list_item">
-        <div class="prodocuts_list_img">
-          <img
-            src="./assets/images/product_Imgs/products-1.jpg"
-            alt="商品圖片_1"
-          >
-        </div>
-        <div class="prodocuts_list_content">
-          <h2 class="prodocuts_list_content_title">
-            bj41600s
-          </h2>
-          <p class="prodocuts_list_content_price text_color_red">
-            ntd3,490
-          </p>
-          <ul class="prodocut_colors">
-            <li class="prodocut_color prodocut_color_brown_dark"></li>
-            <li class="prodocut_color prodocut_color_brown"></li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="prodocuts_list_item">
-        <div class="prodocuts_list_img">
-          <img
-            src="./assets/images/product_Imgs/products-2.jpg"
-            alt="商品圖片_1"
-          >
-        </div>
-        <div class="prodocuts_list_content">
-          <h2 class="prodocuts_list_content_title">
-            bj41600s
-          </h2>
-          <p class="prodocuts_list_content_price text_color_red">
-            ntd3,490
-          </p>
-          <ul class="prodocut_colors">
-            <li class="prodocut_color prodocut_color_brown_dark"></li>
-            <li class="prodocut_color prodocut_color_brown"></li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="prodocuts_list_item">
-        <div class="prodocuts_list_img">
-          <img
-            src="./assets/images/product_Imgs/products-3.jpg"
-            alt="商品圖片_1"
-          >
-        </div>
-        <div class="prodocuts_list_content">
-          <h2 class="prodocuts_list_content_title">
-            bj41600s
-          </h2>
-          <p class="prodocuts_list_content_price text_color_red">
-            ntd3,490
-          </p>
-          <ul class="prodocut_colors">
-            <li class="prodocut_color prodocut_color_brown_dark"></li>
-            <li class="prodocut_color prodocut_color_brown"></li>
-          </ul>
-        </div>
-      </li>
-
-      <li class="prodocuts_list_item">
-        <div class="prodocuts_list_img">
-          <img
-            src="./assets/images/product_Imgs/products-4.jpg"
-            alt="商品圖片_1"
-          >
-        </div>
-        <div class="prodocuts_list_content">
-          <h2 class="prodocuts_list_content_title">
-            bj41600s
-          </h2>
-          <p class="prodocuts_list_content_price text_color_red">
-            ntd3,490
-          </p>
-          <ul class="prodocut_colors">
-            <li class="prodocut_color prodocut_color_brown_dark"></li>
-            <li class="prodocut_color prodocut_color_brown"></li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-
-    <form>
-      <ul class="optical_pagination_form">
-        <li class="optical_pagination_item">
+    <form class="js_pagination pagination">
+      <ul class="pagination_form
+        d_flex
+        flex_justify_center"
+      >
+        <li class="pagination_item">
           <input
             type="radio"
             name="pagination"
@@ -431,7 +184,7 @@
           </label>
         </li>
 
-        <li class="optical_pagination_item">
+        <li class="pagination_item">
           <input
             type="radio"
             name="pagination"
@@ -448,7 +201,7 @@
           </label>
         </li>
 
-        <li class="optical_pagination_item">
+        <li class="pagination_item">
           <input
             type="radio"
             name="pagination"
@@ -464,7 +217,7 @@
           </label>
         </li>
 
-        <li class="optical_pagination_item">
+        <li class="pagination_item">
           <input
             type="radio"
             name="pagination"
@@ -480,7 +233,7 @@
           </label>
         </li>
 
-        <li class="optical_pagination_item">
+        <li class="pagination_item">
           <input
             type="radio"
             name="pagination"
@@ -496,7 +249,7 @@
           </label>
         </li>
 
-        <li class="optical_pagination_item">
+        <li class="pagination_item">
           <input
             type="radio"
             name="pagination"
@@ -512,7 +265,7 @@
           </label>
         </li>
 
-        <li class="optical_pagination_item">
+        <li class="pagination_item">
           <input
             type="radio"
             name="pagination"
@@ -535,11 +288,16 @@
   <footer class="footer">
     <div class="container">
 
-      <div class="footer_content">
-        <ul class="footer_navbar">
+      <div class="footer_content
+        d_flex
+        flex_wrap_wrap
+        flex_justify_space_between
+        flex_align_items_center"
+      >
+        <ul class="footer_navbar d_flex">
           <li class="footer_navbar_item">
             <a
-              href="./index.html"
+              href="index.html"
               class="footer_navbar_item_link"
             >
               首頁
@@ -547,7 +305,7 @@
           </li>
           <li class="footer_navbar_item">
             <a
-              href="./products.html"
+              href="products.html"
               class="footer_navbar_item_link"
             >
             系列鏡框
@@ -555,7 +313,7 @@
           </li>
           <li class="footer_navbar_item">
             <a
-              href="#"
+              href="storeAddress.html"
               class="footer_navbar_item_link"
             >
               門市據點
@@ -579,7 +337,7 @@
           </li>
         </ul>
 
-        <ul class="community_icons">
+        <ul class="d_flex">
           <li class="community_icon">
             <a
               href="#"
@@ -653,7 +411,10 @@
         </div>
       </div>
 
-      <div class="statement">
+      <div class="statement
+        d_flex
+        flex_justify_space_between"
+      >
         <span class="statement_text">
           Copyright © 2020 Glasses.All rights reserved.
         </span>
@@ -682,6 +443,7 @@
 
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+  <!-- <script src="./assets/js/storeAddress.js"></script> -->
 </body>
 
 </html>
