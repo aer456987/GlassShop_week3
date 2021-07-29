@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap');
 
+*, *::before, *::after
+  box-sizing: border-box
 
 body
   font-family: 'Roboto', 'Noto Sans TC', sans-serif;
   font-weight: 400
 
-*, *::before, *::after
-  box-sizing: border-box
+img
+  width: 100%
+  vertical-align: middle
 
 .container
   max-width: 1140px
   margin: 0 auto
   padding: 0 15px
-  // border: solid 1px $color-gray-200
+  border: solid 1px $color-gray-300
 
   +pad
     max-width: 100%
@@ -23,10 +26,7 @@ body
     padding-left: 15px
     padding-right: 15px
 
-img
-  width: 100%
-  vertical-align: middle
-
+// 文字顏色
 .text_color_primary
   color: $text-color-primary
 
@@ -36,6 +36,7 @@ img
 .text_color_white
   color: $color-light
 
+// 字體粗度
 .fw_sm
   font-weight: 400
 .fw_md
@@ -45,9 +46,11 @@ img
 .fw_xl
   font-weight: 900
 
+// 字體傾斜
 .fontStyle_italic
   font-style: italic
 
+// 寬度尺寸
 .maxWidth_sm
   max-width: 24%
 
@@ -60,6 +63,34 @@ img
 .maxWidth_xl
   max-width: 100%
 
+// flex 對齊
+.d_flex
+  display: flex
 
+.flex_wrap_wrap
+  flex-wrap: wrap
+
+.flex_direction_column
+  flex-direction: column
+
+.flex_justify_flex_end
+  justify-content: flex-end
+.flex_justify_center
+  justify-content: center
+.flex_justify_space_between
+  justify-content: space-between
+
+.flex_align_items_center
+  align-items: center
+
+
+
+// 標題邊框襯線
+.page_title_border
+  border-left: solid 8px $border-color-primary
+  +pad
+    border-width: 4px
+
+// 可刪除
 .border
   border: solid 1px black

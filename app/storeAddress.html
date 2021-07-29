@@ -5,13 +5,100 @@ engine: ejs
 current: index
 ---
 
-<main class="prodocuts_page_content">
+<main class="store_address_page_content">
   <div class="container">
-    <h1 class="fw_md js_prodocuts_title">Celluloid Combi</h1>
-    <h3>賽璐珞鈦金屬混合鏡框</h3>
+    <h2 class="fw_lg page_title_border">
+      門市據點
+    </h2>
 
-    <ul class="prodocuts_list">
+    <div class="d_flex
+      flex_align_items_center"
+    >
+      <label for="selectArea">
+        選擇地區
+      </label>
+      <select
+        name="selectArea"
+        id="selectArea"
+        >
+        <option value="台北市">台北市</option>
+        <option value="新北市">新北市</option>
+        <option value="台中市">台中市</option>
+        <option value="高雄市">高雄市</option>
+      </select>
+    </div>
+
+    <ul class="js_address_list
+      address_list
+      d_flex"
+    >
+      <li class="address_list_item maxWidth_md">
+
+        <div class="address_list_img">
+          <img
+            src="./assets/images/locate_Imgs/locate1.jpeg"
+            alt="商品圖片_${product.id}"
+          >
+        </div>
+        <div class="address_list_content">
+          <h2 class="address_list_content_title">
+            ${product.title}
+          </h2>
+          <p class="fw_md
+            address_list_content_price
+            text_color_primary"
+          >
+            ntd${product.price}
+          </p>
+
+        </div>
+      </li>
+
+
+      <li class="address_list_item maxWidth_md">
+
+        <div class="address_list_img">
+          <img
+            src="./assets/images/locate_Imgs/locate1.jpeg"
+            alt="商品圖片_${product.id}"
+          >
+        </div>
+        <div class="address_list_content">
+          <h2 class="address_list_content_title">
+            ${product.title}
+          </h2>
+          <p class="fw_md
+            address_list_content_price
+            text_color_primary"
+          >
+            ntd${product.price}
+          </p>
+
+        </div>
+      </li>
+
+
+      <li class="address_list_item maxWidth_md">
+
+        <div class="address_list_img">
+          <img
+            src="./assets/images/locate_Imgs/locate1.jpeg"
+            alt="商品圖片_${product.id}"
+          >
+        </div>
+        <div class="address_list_content">
+          <h2 class="address_list_content_title">
+            ${product.title}
+          </h2>
+          <p class="fw_md
+            address_list_content_price
+            text_color_primary"
+          >
+            ntd${product.price}
+          </p>
+
+        </div>
+      </li>
     </ul>
-
   </div>
 </main>

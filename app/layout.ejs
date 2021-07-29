@@ -11,13 +11,17 @@
 
 <body>
   <header class="header_navbar">
-    <nav class="nav">
+    <nav class="nav
+      d_flex
+      flex_justify_space_between
+      flex_align_items_center"
+    >
       <h1 class="nav_logo_link">
         <a href="index.html">
           SEE IT CLEARLY
         </a>
       </h1>
-      <ul class="navbar">
+      <ul class="navbar d_flex">
         <li class="navbar_item">
           <a
             href="products.html"
@@ -59,8 +63,13 @@
   <footer class="footer">
     <div class="container">
 
-      <div class="footer_content">
-        <ul class="footer_navbar">
+      <div class="footer_content
+        d_flex
+        flex_wrap_wrap
+        flex_justify_space_between
+        flex_align_items_center"
+      >
+        <ul class="footer_navbar d_flex">
           <li class="footer_navbar_item">
             <a
               href="index.html"
@@ -79,7 +88,7 @@
           </li>
           <li class="footer_navbar_item">
             <a
-              href="#"
+              href="storeAddress.html"
               class="footer_navbar_item_link"
             >
               門市據點
@@ -103,7 +112,7 @@
           </li>
         </ul>
 
-        <ul class="community_icons">
+        <ul class="d_flex">
           <li class="community_icon">
             <a
               href="#"
@@ -177,7 +186,10 @@
         </div>
       </div>
 
-      <div class="statement">
+      <div class="statement
+        d_flex
+        flex_justify_space_between"
+      >
         <span class="statement_text">
           Copyright © 2020 Glasses.All rights reserved.
         </span>
@@ -206,6 +218,7 @@
 
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+  <!-- <script src="./assets/js/storeAddress.js"></script> -->
 </body>
 
 </html>

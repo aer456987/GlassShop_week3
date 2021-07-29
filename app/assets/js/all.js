@@ -1,10 +1,10 @@
 // 分類列表
 const prodocutsTitle = document.querySelector('.js_prodocuts_title');
-const productNavbarLabels = document.querySelectorAll('.product_navbar_label');
+const productNavbarLabels = document.querySelectorAll('.js_product_navbar_label');
 // 商品內容渲染列表
-const prodocutsListDom = document.querySelector('.prodocuts_list');
+const prodocutsListDom = document.querySelector('.js_prodocuts_list');
 // 分頁
-const pagination = document.querySelector('.pagination');
+const pagination = document.querySelector('.js_pagination');
 // 商品資訊
 const productDatas = {
   optical: {
@@ -237,7 +237,7 @@ function bannerImgSrt(bannerImg) {
 }
 // bannerImg 渲染 Fn
 function renderBannerImg(bannerImg) {
-  const prodocutsBannerDom = document.querySelector('.product_banners_lists');
+  const prodocutsBannerDom = document.querySelector('.js_product_banners_lists');
 
   let str = '';
   bannerImg.forEach((item) => {
@@ -257,7 +257,7 @@ function productOpticalsStr(product) { // 渲染字串
           alt="商品圖片_${product.id}"
         >
       </div>
-      <div class="prodocuts_list_content">
+      <div class="d_flex flex_wrap_wrap flex_justify_space_between">
         <h2 class="prodocuts_list_content_title">
           ${product.title}
         </h2>
@@ -282,7 +282,7 @@ function productSunglassesStr(product) { // 渲染字串
           alt="商品圖片_${product.id}"
         >
       </div>
-      <div class="prodocuts_list_content">
+      <div class="d_flex flex_wrap_wrap flex_justify_space_between">
         <h2 class="prodocuts_list_content_title">
           ${product.title}
         </h2>
@@ -301,25 +301,25 @@ function productSunglassesStr(product) { // 渲染字串
 function productFunctionalStr(product) { // 渲染字串
   return `
   <li class="prodocuts_list_item prodocut_sunglasses maxWidth_md">
-  <div class="prodocuts_list_img">
-    <img
-      src="${product.imgUrl}"
-      alt="商品圖片_${product.id}"
-    >
-  </div>
-  <div class="prodocuts_list_content">
-    <h2 class="prodocuts_list_content_title">
-      ${product.title}
-    </h2>
-    <p class="fw_md prodocuts_list_content_price text_color_primary">
-      ntd${product.price}
-    </p>
-    <ul class="prodocut_colors">
-      <li class="prodocut_color ${product.colors[0]}"></li>
-      <li class="prodocut_color ${product.colors[1]}"></li>
-    </ul>
-  </div>
-</li>
+    <div class="prodocuts_list_img">
+      <img
+        src="${product.imgUrl}"
+        alt="商品圖片_${product.id}"
+      >
+    </div>
+    <div class="d_flex flex_wrap_wrap flex_justify_space_between">
+      <h2 class="prodocuts_list_content_title">
+        ${product.title}
+      </h2>
+      <p class="fw_md prodocuts_list_content_price text_color_primary">
+        ntd${product.price}
+      </p>
+      <ul class="prodocut_colors">
+        <li class="prodocut_color ${product.colors[0]}"></li>
+        <li class="prodocut_color ${product.colors[1]}"></li>
+      </ul>
+    </div>
+  </li>
   `;
 }
 // 商品渲染 Fn
