@@ -3,7 +3,7 @@
     +font(48px, 1.5)
     margin-bottom: 40px
     text-align: center
-    +ipad
+    +pad
       font-size: 32px
       margin-bottom: 32px
     +mobile
@@ -13,7 +13,7 @@
 .page_padding
   padding-top: 60px
   padding-bottom: 80px
-  +ipad
+  +pad
     padding-top: 40px
     padding-bottom: 56px
   +mobile
@@ -38,7 +38,7 @@
   span
     +font(36px, 1.5)
 
-  +ipad
+  +pad
     h1
       font-size: 48px
     span
@@ -54,9 +54,9 @@
 
 // 服務介紹
 .service_items
-  background: rgba($color-red, .05)
+  background: rgba($color-primary, .05)
   .page_padding
-    +ipad
+    +pad
       padding-left: 77px
       padding-right: 77px
     +mobile
@@ -66,7 +66,7 @@
 .service_lists
   display: flex
   justify-content: space-between
-  +ipad
+  +pad
     flex-wrap: wrap
   +mobile
     justify-content: center
@@ -76,13 +76,13 @@
   display: flex
   flex-direction: column
   align-items: center
-  +ipad
+  +pad
     max-width: 47%
   +mobile
     max-width: 100%
 
 .service_list_item:nth-child(1), .service_list_item:nth-child(2)
-  +ipad
+  +pad
     margin-bottom: 32px
 
 .service_list_item:not(:last-child),
@@ -106,7 +106,7 @@
 // 產品分類 
 .product_img
   max-width: 57%
-  +ipad
+  +pad
     max-width: 50%
   +mobile
     max-width: 100%
@@ -128,12 +128,12 @@
 
 .product_list_item:nth-child(2)
   flex-direction: row-reverse
-  +ipad
+  +pad
     flex-direction: row
 
 .product_list_item:not(:last-child)
   margin-bottom: 32px
-  +ipad
+  +pad
     margin-bottom: 8px
 
 .product_content
@@ -145,13 +145,13 @@
   +box-size(48px, 48px)
   display: block
   margin-right: 8px
-  +ipad
+  +pad
     +box-size(36px, 36px)
 
 .product_text
   +font(48px, 1.5)
   text-transform: uppercase
-  +ipad
+  +pad
     +font(28px, 2.57)
 
 
@@ -174,7 +174,7 @@
   align-items: center
   width: 49%
   position: relative
-  background: $color-white
+  background: $color-light
   +mobile
     width: 100%
 
@@ -191,7 +191,7 @@
   +font(72px, 1.5)
   position: absolute
   z-index: 2
-  +ipad
+  +pad
     +font(32px, 0.78)
 
 
@@ -199,23 +199,23 @@
 .client_recommend_list
   display: flex
   justify-content: space-between
-  +ipad
+  +pad
     flex-wrap: wrap
 
 .client_recommend_card
   max-width: 23%
-  border: solid 1px $color-gray-light
+  border: solid 1px $color-gray-100
   border-radius: 4px
-  box-shadow: 0 2px 6px $color-gray-light
+  box-shadow: 0 2px 6px $color-gray-100
   overflow: hidden
-  +ipad
+  +pad
     max-width: 48%
   +mobile
     max-width: 100%
 
 .client_recommend_card:nth-child(1),
 .client_recommend_card:nth-child(2)
-  +ipad
+  +pad
     margin-bottom: 32px
 
 .client_recommend_card:not(:last-child)
@@ -229,7 +229,7 @@
   flex-direction: column
   justify-content: space-between
   padding: 16px
-  +ipad
+  +pad
     padding-left: 24px
     padding-right: 24px
 
@@ -243,11 +243,11 @@
   +font(16px, 1.5)
 
 .client_recommend_card_date
-  color: $color-gray
+  color: $color-gray-200
 
 // 聯絡表單
 .contact_us
-  background: rgba($color-red, .05)
+  background: rgba($color-primary, .05)
   .page_padding
     +mobile
       padding-top: 30px
@@ -259,7 +259,7 @@
 .contact_us_text
   +font(20px, 1.5)
   margin-bottom: 20px
-  +ipad
+  +pad
     +font(16px, 1.5)
     margin-bottom: 16px
   +mobile
@@ -273,20 +273,20 @@
 
 .contact_form_item
   margin-bottom: 16px
-  +ipad
+  +pad
     margin-bottom: 8px
 
 .contact_form_label
   +font(16px, 1.5)
   margin-bottom: 4px
-  +ipad
+  +pad
     +font(14px, 1.5)
 
 .contact_form_input
   +font(16px, 1.5)
   width: 100%
   padding: 12px 16px
-  border: solid 1px $color-black
+  border: solid 1px $color-dark
   background: transparent
 
 .contact_form_checkbox
@@ -297,7 +297,7 @@
   label
     display: block
 
-  +ipad
+  +pad
     margin-bottom: 20px
 
 
@@ -308,10 +308,11 @@
   width: 50%
   border: none
   padding: 16px
-  color: $color-white
-  background: $color-red
+  font-weight: 700
+  color: $color-light
+  background: $color-primary
   transition-duration: .3s
   &:hover
-    background: darken($color-red, 5)
+    background: darken($color-primary, 5)
     cursor: pointer
     transition-duration: .3s

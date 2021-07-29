@@ -1,8 +1,8 @@
 .footer
   padding: 32px 0
-  color: $color-white
-  background: $color-red
-  +ipad
+  color: $color-light
+  background: $color-primary
+  +pad
     padding-bottom: 21px
   +mobile
     padding-top: 24px
@@ -28,10 +28,10 @@
   +font(16px, 1.5)
   display: block
   padding: 12px 24px
-  color: $color-white
+  color: $color-light
   &:hover
-    color: $color-red-dark
-  +ipad
+    color: $color-primary-dark
+  +pad
     padding: 6px 20px
 
 .footer_navbar_item:first-child
@@ -44,7 +44,7 @@
     img
       transform: scale(1.1)
 
-  +ipad
+  +pad
     img
       +box-size(24px, 24px)
 
@@ -55,7 +55,7 @@
 .contact_datas
   width: 100%
   padding: 24px 0
-  +ipad
+  +pad
     padding-top: 12px
     padding-bottom: 20px
   +mobile
@@ -66,14 +66,14 @@
   +font(36px, 1.5)
   span, p
     display: inline-block
-  +ipad
+  +pad
     +font(20px, 1.5)
   +mobile
     +font(16px, 1.875)
 
 .contact_tel
   margin-bottom: 16px
-  +ipad
+  +pad
     margin-bottom: 12px
   +mobile
     margin-bottom: 6px
@@ -81,7 +81,7 @@
 .contact_icon
   +box-size(48px, 48px)
   margin-right: 16px
-  +ipad
+  +pad
     +box-size(24px, 24px)
     margin-right: 8px
   +mobile
@@ -93,18 +93,18 @@
   vertical-align: middle
 
 .contact_text
-  color: $color-white
+  color: $color-light
   &:hover
-    color: $color-red-dark
+    color: $color-primary-dark
 
 
 .statement
   display: flex
   justify-content: space-between
   padding: 32px 0 7px
-  border-top: solid 1px $color-white
+  border-top: solid 1px $color-light
 
-  +ipad
+  +pad
     padding-top: 24px
     padding-bottom: 0
   +mobile
@@ -126,19 +126,19 @@
 
   li:first-child
     margin-right: 48px
-  +ipad
+  +pad
     margin-top: 12px
   +mobile
     margin: 0
 
 .statement_link
   +font(14px, 1.5)
-  color: $color-white
+  color: $color-light
   +mobile
     padding: 8px 0
 
   &:hover
-    color: $color-red-dark
+    color: $color-primary-dark
 
 
 .footer_navbar_item_link, .community_icons_img img, .contact_text, .statement_link

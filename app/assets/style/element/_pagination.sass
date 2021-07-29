@@ -1,0 +1,58 @@
+// 商品主區塊_OPTICAL_分頁
+.pagination
+  display: none
+  margin-top: 96px
+  +pad
+    margin-top: 65px
+  +mobile
+    display: block
+    margin-top: 40px
+
+.pagination_form
+  max-width: 50%
+  display: flex
+  justify-content: center
+  margin: 0 auto
+  +mobile
+    max-width: 100%
+
+.pagination_item
+  +pad
+    flex: 2 0 auto
+    text-align: center
+
+
+.pagination_label
+  border: solid 1px $color-gray-300
+  display: block
+  &:hover
+    color: $color-light
+    background: $color-dark
+    cursor: pointer
+
+.pagination_link
+  display: none
+  &:checked + .pagination_label
+    color: $color-light
+    background: $color-dark
+
+.pagination_link_num
+  +font(18px, 1.5)
+  padding: 9.5px 16px
+  +pad
+    padding-left: 0
+    padding-right: 0
+  +mobile
+    font-size: 16px
+
+.pagination_link_text
+  +font(19px, 1.53)
+  padding: 8.5px 12px
+  +pad
+    padding-left: 0
+    padding-right: 0
+  +mobile
+    font-size: 17px
+
+.pagination_item:last-child
+  background: $color-gray-100
