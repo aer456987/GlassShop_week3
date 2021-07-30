@@ -1,0 +1,38 @@
+---
+title: SEE IT CLEARLY - 門市據點
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="base_page_content">
+  <div class="container">
+    <h2 class="fw_lg page_title">
+      門市據點
+    </h2>
+
+    <form class="locate_form
+      d_flex
+      flex_align_items_center"
+    >
+      <label for="selectArea">
+        選擇地區
+      </label>
+      <select
+        name="selectArea"
+        id="selectArea"
+        >
+        <option value="台北市">台北市</option>
+        <option value="新北市">新北市</option>
+        <option value="台中市">台中市</option>
+        <option value="高雄市">高雄市</option>
+      </select>
+    </form>
+
+    <ul class="js_location_lists
+      location_lists
+      d_flex
+      flex_wrap_wrap"
+    ></ul>
+  </div>
+</main>

@@ -15,7 +15,7 @@ img
   max-width: 1140px
   margin: 0 auto
   padding: 0 15px
-  // border: solid 1px $color-gray-300
+  border: solid 1px $color-gray-300
 
   +pad
     max-width: 100%
@@ -25,6 +25,15 @@ img
   +mobile
     padding-left: 15px
     padding-right: 15px
+
+.base_page_content
+  padding: 96px 0 128px
+  +pad
+    padding-top: 60px
+    padding-bottom: 76px
+  +mobile
+    padding-top: 28px
+    padding-bottom: 40px
 
 // 文字顏色
 .text_color_primary
@@ -52,16 +61,21 @@ img
 
 // 寬度尺寸
 .maxWidth_sm
-  max-width: 24%
+  max-width: 25%
 
 .maxWidth_md
-  max-width: 32%
+  max-width: 33.3333%
 
 .maxWidth_lg
-  max-width: 49%
+  max-width: 50%
 
 .maxWidth_xl
   max-width: 100%
+
+.maxWidth_4
+  max-width: 40%
+.maxWidth_6
+  max-width: 60%
 
 // flex 對齊
 .d_flex
@@ -80,17 +94,22 @@ img
 .flex_justify_space_between
   justify-content: space-between
 
+.flex_align_items_start
+  align-items: start
 .flex_align_items_center
   align-items: center
 
-
-
-// 標題邊框襯線
-.page_title_border
+// 每頁標題
+.page_title
+  +font(48px, 1.67)
+  padding-left: 16px
   border-left: solid 8px $border-color-primary
   +pad
     border-width: 4px
+  +mobile
+    +font(28px, 1.2.86)
+    padding-left: 8px
 
 // 可刪除
 .border
-  border: solid 1px black
+  border: solid 1px $border-color-gray-100

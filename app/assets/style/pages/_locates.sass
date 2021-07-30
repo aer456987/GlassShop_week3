@@ -1,0 +1,93 @@
+.locate_form
+  margin-top: 60px
+  margin-bottom: 32px
+  label
+    +font(24px, 1.25)
+    margin-right: 20px
+    white-space: nowrap
+  select
+    +font(18px, 1.45)
+    width: 324px
+    padding: 8px 19px 11px
+    border-color: $color-gray-200
+    color: $color-gray-500
+
+  +pad
+    margin-top: 40px
+    margin-bottom: 24px
+    label
+      +font(16px, 1.875)
+    select
+      +font(16px, 1.5)
+      width: 237px
+      padding: 10px 16px 12px
+
+  +mobile
+    margin-top: 24px
+    margin-bottom: 20px
+    label
+      +font(14px, 2.14)
+      margin-right: 12px
+    select
+      +font(14px, 1.72)
+      width: 100%
+      padding-top: 7px
+      padding-bottom: 9px
+
+.location_lists
+  margin: 0 -15px
+
+.location_list_item
+  margin-bottom: 32px
+  padding: 0 15px
+  +pad
+    max-width: 50%
+    margin-bottom: 20px
+  +mobile
+    max-width: 100%
+    margin-bottom: 16px
+
+.location_list_content_title
+  +font(24px, 1.5)
+  padding: 12px 24px
+  +pad
+    padding-top: 8px
+    padding-bottom: 8px
+    font-size: 16px
+
+.location_list_content
+  padding: 16px 24px
+  li:not(:last-child)
+    margin-bottom: 8px
+
+.location_list_content_text
+  +font(20px, 1.5)
+  +pad
+    font-size: 14px
+
+.location_list_content_icon
+  +box-size(24px, 24px)
+  margin-right: 8px
+  text-align: center
+  img
+    height: 100%
+    display: block
+  +pad
+    +box-size(20px, 20px)
+
+  
+.location_list_btn
+  +font(19px, 1.42)
+  display: block
+  width: 100%
+  padding: 20px
+  text-align: center
+  color: $color-light
+  background: $color-dark
+  transition-duration: .5s
+  &:hover
+    background: $color-gray-500
+    transition-duration: .2s
+  +pad
+    +font(14px, 1.5)
+    padding: 16px

@@ -1,10 +1,8 @@
-// 分類列表
-const prodocutsTitle = document.querySelector('.js_prodocuts_title');
-const productNavbarLabels = document.querySelectorAll('.js_product_navbar_label');
-// 商品內容渲染列表
-const prodocutsListDom = document.querySelector('.js_prodocuts_list');
-// 分頁
-const pagination = document.querySelector('.js_pagination');
+const prodocutsTitle = document.querySelector('.js_prodocuts_title'); // 商品標題
+const productNavbarLabels = document.querySelectorAll('.js_product_navbar_label'); // 商品分類表
+
+const prodocutsListDom = document.querySelector('.js_prodocuts_list'); // 商品內容渲染列表
+const pagination = document.querySelector('.js_pagination'); // 分頁
 // 商品資訊
 const productDatas = {
   optical: {
@@ -221,8 +219,50 @@ const productDatas = {
     ],
   },
 };
+const selectAreaDatas = [
+  {
+    id: 1,
+    areaName: '台北中山旗艦店',
+    tel: '(02)000-1234',
+    time: '10:00-21:00',
+    address: '台北市中山區南京東路25巷2-1號',
+    imgUrl: './assets/images/locate_Imgs/locate1.jpeg',
+  },
+  {
+    id: 2,
+    areaName: '台北中山旗艦店',
+    tel: '(02)000-1234',
+    time: '10:00-21:00',
+    address: '台北市中山區南京東路25巷2-1號',
+    imgUrl: './assets/images/locate_Imgs/locate2.jpg',
+  },
+  {
+    id: 3,
+    areaName: '台北中山旗艦店',
+    tel: '(02)000-1234',
+    time: '10:00-21:00',
+    address: '台北市中山區南京東路25巷2-1號',
+    imgUrl: './assets/images/locate_Imgs/locate3.jpg',
+  },
+  {
+    id: 4,
+    areaName: '台北中山旗艦店',
+    tel: '(02)000-1234',
+    time: '10:00-21:00',
+    address: '台北市中山區南京東路25巷2-1號',
+    imgUrl: './assets/images/locate_Imgs/locate4.jpg',
+  },
+  {
+    id: 5,
+    areaName: '台北中山旗艦店',
+    tel: '(02)000-1234',
+    time: '10:00-21:00',
+    address: '台北市中山區南京東路25巷2-1號',
+    imgUrl: './assets/images/locate_Imgs/locate5.jpg',
+  },
+];
 
-
+// ===============商品頁渲染設定===============
 // bannerImg 渲染用字串
 function bannerImgSrt(bannerImg) {
   return `
@@ -246,11 +286,10 @@ function renderBannerImg(bannerImg) {
   prodocutsBannerDom.innerHTML = str;
 }
 
-
 // 商品渲染 - opticals 渲染用字串
 function productOpticalsStr(product) { // 渲染字串
   return `
-    <li class="prodocuts_list_item prodocut_opticals maxWidth_sm">
+    <li class="prodocuts_list_item prodocut_opticals maxWidth_sm maxWidth_sm_sm maxWidth_md_sm">
       <div class="prodocuts_list_img">
         <img
           src="${product.imgUrl}"
@@ -371,14 +410,102 @@ function clickProductRenderEvent() {
   });
 }
 
+// ===============門市據點渲染設定===============
+function locateSrt(locate) {
+  return `
+    <li class="location_list_item maxWidth_md">
+      <img
+        src="${locate.imgUrl}"
+        alt="商品圖片_${locate.id}"
+      >
+      <div>
+        <h3 class="location_list_content_title border">
+          ${locate.areaName}
+        </h3>
+        <ul class="location_list_content border">
+          <li>
+            <p class="location_list_content_text
+              d_flex
+              flex_align_items_center"
+            >
+              <i class="location_list_content_icon">
+                <img
+                  src="./assets/images/icons/icon-phone-black.svg"
+                  alt="tel icon"
+                >
+              </i>
+              電話：${locate.tel}
+            </p>
+          </li>
+          <li>
+            <p class="location_list_content_text
+              d_flex
+              flex_align_items_center"
+            >
+              <i class="location_list_content_icon">
+                <img
+                  src="./assets/images/icons/icon-clock-black.svg"
+                  alt="time icon"
+                >
+              </i>
+              營業時間：${locate.time}
+            </p>
+          </li>
+          <li>
+            <p class="location_list_content_text d_flex flex_align_items_start">
+              <i class="location_list_content_icon">
+                <img
+                  src="./assets/images/icons/icon-map.svg"
+                  alt="address icon"
+                >
+              </i>
+              地址：${locate.address}
+            </p>
+          </li>
+        </ul>
+        <a
+          href="locate.html"
+          class="location_list_btn"
+        >
+          詳細資訊
+        </a>
+      </div>
+    </li>
+  `;
+}
 
-// 初始畫
+
+// ===============進入畫面後預設渲染函式===============
+// 商品頁面 - 進入畫面後預設渲染函式
+function initProduct() {
+  if (prodocutsTitle) {
+    prodocutsTitle.textContent = productDatas.optical.title;
+    renderBannerImg(productDatas.optical.banners);
+    renderProductData(productDatas.optical.products, productOpticalsStr);
+    pagination.setAttribute('style', 'display: block;')
+    clickProductRenderEvent();
+  }
+}
+
+// 門市據點 - 進入畫面後預設渲染函式
+function initLocate() {
+  const locateListDom = document.querySelector('.js_location_lists');
+
+  if (locateListDom) {
+    let str = '';
+    selectAreaDatas.forEach((item) => {
+      str += locateSrt(item);
+    });
+    locateListDom.innerHTML = str;
+  }
+}
+
+
+// ===================================
+// 初始化  
 function init(){
-  prodocutsTitle.textContent = productDatas.optical.title;
-  renderBannerImg(productDatas.optical.banners);
-  renderProductData(productDatas.optical.products, productOpticalsStr);
-  pagination.setAttribute('style', 'display: block;')
-  clickProductRenderEvent();
+  initProduct();
+  initLocate();
 }
 
 init();
