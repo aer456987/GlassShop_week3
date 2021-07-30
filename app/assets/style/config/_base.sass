@@ -15,7 +15,7 @@ img
   max-width: 1140px
   margin: 0 auto
   padding: 0 15px
-  border: solid 1px $color-gray-300
+  // border: solid 1px $color-gray-300
 
   +pad
     max-width: 100%
@@ -46,13 +46,13 @@ img
   color: $color-light
 
 // 字體粗度
-.fw_sm
+.fw_sm // regular
   font-weight: 400
-.fw_md
+.fw_md // medium
   font-weight: 500
-.fw_lg
+.fw_lg // bold
   font-weight: 700
-.fw_xl
+.fw_xl // block
   font-weight: 900
 
 // 字體傾斜
@@ -102,12 +102,15 @@ img
 // 每頁標題
 .page_title
   +font(48px, 1.67)
+  margin-bottom: 60px
   padding-left: 16px
   border-left: solid 8px $border-color-primary
   +pad
+    margin-bottom: 40px
     border-width: 4px
   +mobile
     +font(28px, 1.2.86)
+    margin-bottom: 24px
     padding-left: 8px
 
 // 可刪除

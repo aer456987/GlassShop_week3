@@ -1,0 +1,245 @@
+---
+title: SEE IT CLEARLY - 部落格
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<nav class="blog_navbar">
+  <div class="container">
+    <div class="d_flex
+      flex_justify_space_between
+      flex_align_items_center"
+    >
+      <form>
+        <ul class="d_flex">
+
+          <li class="blog_navbar_item">
+            <input
+              type="radio"
+              name="blog_navbar_menu"
+              value="blog_new_news"
+              id="blog_new_news"
+              class="blog_navbar_radio"
+              checked
+            >
+            <label
+              for="blog_new_news"
+              class="js_blog_navbar_label
+                blog_navbar_label
+                d_flex
+                flex_justify_center
+                fw_md"
+            >
+            最新消息
+          </label>
+          <span></span>
+        </li>
+
+        <li class="blog_navbar_item">
+          <input
+            type="radio"
+            name="blog_navbar_menu"
+            value="blog_special_plan"
+            id="blog_special_plan"
+            class="blog_navbar_radio"
+          >
+          <label
+            for="blog_special_plan"
+            class="js_blog_navbar_label
+              blog_navbar_label
+              d_flex
+              flex_justify_center
+              fw_md"
+          >
+            特別企劃
+          </label>
+          <span></span>
+        </li>
+
+        <li class="blog_navbar_item">
+          <input
+            type="radio"
+            name="blog_navbar_menu"
+            value="blog_new_product"
+            id="blog_new_product"
+            class="fw_md blog_navbar_radio"
+          >
+          <label
+            for="blog_new_product"
+            class="js_blog_navbar_label
+              blog_navbar_label
+              d_flex
+              flex_justify_center
+              fw_md"
+          >
+            新品上市
+          </label>
+          <span></span>
+        </li>
+
+        <li class="blog_navbar_item">
+          <input
+            type="radio"
+            name="blog_navbar_menu"
+            value="blog_knowledge"
+            id="blog_knowledge"
+            class="fw_md blog_navbar_radio"
+          >
+          <label
+            for="blog_knowledge"
+            class="js_blog_navbar_label
+              blog_navbar_label
+              d_flex
+              flex_justify_center
+              fw_md"
+          >
+            鏡框小知識
+          </label>
+          <span></span>
+        </li>
+      </ul>
+      </form>
+      <a href="#">
+        <img
+          src="./assets/images/icons/icon-search.svg"
+          alt="搜尋icon"
+          class="search_icon"
+        >
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main class="base_page_content">
+  <div class="container">
+
+    <h2 class="fw_lg page_title">
+      部落格
+    </h2>
+
+    <ul class="js_blog_lists
+      blog_lists"
+    ></ul>
+
+    <form class="js_pagination pagination">
+      <ul class="pagination_form
+        d_flex
+        flex_justify_center"
+      >
+        <li class="pagination_item">
+          <input
+            type="radio"
+            name="pagination"
+            id="pagination_previous"
+            class="pagination_link"
+          >
+          <label
+            for="pagination_previous"
+            name="上一頁"
+            class="pagination_label pagination_link_text"
+          >
+            上一頁
+          </label>
+        </li>
+
+        <li class="pagination_item">
+          <input
+            type="radio"
+            name="pagination"
+            id="pagination_num_1"
+            class="pagination_link"
+            checked
+          >
+          <label
+            for="pagination_num_1"
+            name="頁數 1"
+            class="pagination_label pagination_link_num"
+          >
+            1
+          </label>
+        </li>
+
+        <li class="pagination_item">
+          <input
+            type="radio"
+            name="pagination"
+            id="pagination_num_2"
+            class="pagination_link"
+          >
+          <label
+            for="pagination_num_2"
+            name="頁數 2"
+            class="pagination_label pagination_link_num"
+          >
+            2
+          </label>
+        </li>
+
+        <li class="pagination_item">
+          <input
+            type="radio"
+            name="pagination"
+            id="pagination_num_3"
+            class="pagination_link"
+          >
+          <label
+            for="pagination_num_3"
+            name="頁數 3"
+            class="pagination_label pagination_link_num"
+          >
+            3
+          </label>
+        </li>
+
+        <li class="pagination_item">
+          <input
+            type="radio"
+            name="pagination"
+            id="pagination_num_4"
+            class="pagination_link"
+          >
+          <label
+            for="pagination_num_4"
+            name="頁數 4"
+            class="pagination_label pagination_link_num"
+          >
+            4
+          </label>
+        </li>
+
+        <li class="pagination_item">
+          <input
+            type="radio"
+            name="pagination"
+            id="pagination_num_5"
+            class="pagination_link"
+          >
+          <label
+            for="pagination_num_5"
+            name="頁數 5"
+            class="pagination_label pagination_link_num"
+          >
+            5
+          </label>
+        </li>
+
+        <li class="pagination_item">
+          <input
+            type="radio"
+            name="pagination"
+            id="pagination_num_next"
+            class="pagination_link"
+          >
+          <label
+            for="pagination_num_next"
+            name="下一頁"
+            class="pagination_label pagination_link_text"
+          >
+            下一頁
+          </label>
+        </li>
+      </ul>
+    </form>
+  </div>
+</main>

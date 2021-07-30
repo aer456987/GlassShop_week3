@@ -261,6 +261,70 @@ const selectAreaDatas = [
     imgUrl: './assets/images/locate_Imgs/locate5.jpg',
   },
 ];
+const faqDatas = [
+  {
+    id: 1,
+    title: '請問可否自備鏡框單配鏡片',
+  },
+  {
+    id: 2,
+    title: '眼鏡都可以20分鐘取件嗎？',
+  },
+  {
+    id: 3,
+    title: '散光鏡片需要額外加價嗎？',
+  },
+  {
+    id: 4,
+    title: '我可以使用舊眼鏡的度數配鏡片嗎？',
+  },
+  {
+    id: 5,
+    title: '請問可以單購買鏡框嗎？',
+  },
+];
+const faqDatas = [
+  {
+    id: 1,
+    date: '2020/02/14',
+    titile: '情人特別企劃',
+    asd: '2020 Valentine’s Special',
+    content: '一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！<br>即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯',
+    imgUrl: '',
+  },
+  {
+    id: 2,
+    date: '2020/02/02',
+    titile: '街頭潮人訪問',
+    asd: 'Street Interview',
+    content: '炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為主，但有時單純只穿搭 T 恤或短袖開襟襯衫，又覺得整體造型度有點不足嗎？那麼不妨可以透過「配件」，為穿搭點綴出與眾不同的視覺層次，而本季有哪些必備的配件系列呢？一起從以下推薦的 3 款單品，讓你瞬間帥氣爆棚散發型男品味⋯⋯',
+    imgUrl: '',
+  },
+  {
+    id: 3,
+    date: '2020/02/02',
+    titile: '春季新品上市',
+    asd: 'New Selection',
+    content: '2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯',
+    imgUrl: '',
+  },
+  {
+    id: 4,
+    date: '2020/01/18',
+    titile: '設計師獨享鏡框優惠',
+    asd: 'Sales for Designer',
+    content: '2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯',
+    imgUrl: '',
+  },
+  {
+    id: 5,
+    date: '2019/08/07',
+    titile: '抵抗夏日大作戰',
+    asd: 'Summer Special',
+    content: '2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯',
+    imgUrl: '',
+  },
+];
 
 // ===============商品頁渲染設定===============
 // bannerImg 渲染用字串
@@ -474,6 +538,61 @@ function locateSrt(locate) {
   `;
 }
 
+// ===============常見問題渲染設定===============
+function faqSrt(faq) {
+  return `
+  <li class="faq_list">
+    <h3 class="fw_lg faq_heading">
+      Q${faq.id}.${faq.title}
+    </h3>
+    <ul class="faq_answer">
+      <li>
+        <p>
+          A${faq.id}.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。
+        </p>
+      </li>
+      <li>
+        <p>
+          當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。
+        </p>
+      </li>
+      <li>
+        <p>
+          他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
+        </p>
+      </li>
+    </ul>
+  </li>
+  `;
+}
+
+// ===============常見問題渲染設定===============
+function blogSrt(faq) {
+  return `
+  // <li class="faq_list">
+  //   <h3 class="fw_lg faq_heading">
+  //     Q${faq.id}.${faq.title}
+  //   </h3>
+  //   <ul class="faq_answer">
+  //     <li>
+  //       <p>
+  //         A${faq.id}.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。
+  //       </p>
+  //     </li>
+  //     <li>
+  //       <p>
+  //         當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。
+  //       </p>
+  //     </li>
+  //     <li>
+  //       <p>
+  //         他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
+  //       </p>
+  //     </li>
+  //   </ul>
+  // </li>
+  `;
+}
 
 // ===============進入畫面後預設渲染函式===============
 // 商品頁面 - 進入畫面後預設渲染函式
@@ -500,12 +619,41 @@ function initLocate() {
   }
 }
 
+// 常見問題 - 進入畫面後預設渲染函式
+function initFaq() {
+  const faqListsDom = document.querySelector('.js_faq_lists');
+
+  if (faqListsDom) {
+    let str = '';
+    faqDatas.forEach((item) => {
+      str += faqSrt(item);
+    });
+    faqListsDom.innerHTML = str;
+  }
+}
+
+// 部落格 - 進入畫面後預設渲染函式
+function initBlog() {
+  const blogListsDom = document.querySelector('.js_blog_lists');
+
+  if (blogListsDom) {
+    pagination.setAttribute('style', 'display: block;');
+
+    let str = '';
+    // faqDatas.forEach((item) => {
+    //   str += faqSrt(item);
+    // });
+    // blogListsDom.innerHTML = str;
+  }
+}
 
 // ===================================
 // 初始化  
 function init(){
   initProduct();
   initLocate();
+  initFaq();
+  initBlog();
 }
 
 init();
