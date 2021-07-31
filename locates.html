@@ -32,7 +32,7 @@
         </li>
         <li class="navbar_item">
           <a
-            href="storeAddress.html"
+            href="locates.html"
             class="navbar_item_link"
           >
             門市據點
@@ -40,7 +40,7 @@
         </li>
         <li class="navbar_item">
           <a
-            href=""
+            href="blog.html"
             class="navbar_item_link"
           >
             部落格
@@ -48,7 +48,7 @@
         </li>
         <li class="navbar_item">
           <a
-            href=""
+            href="faq.html"
             class="navbar_item_link"
           >
             常見問題
@@ -59,13 +59,14 @@
   </header>
 
   
-<main class="store_address_page_content">
-  <div class="container">
-    <h2 class="fw_lg page_title_border">
+<main class="base_page_content">
+  <section class="container">
+    <h2 class="fw_lg page_title">
       門市據點
     </h2>
 
-    <div class="d_flex
+    <form class="locate_form
+      d_flex
       flex_align_items_center"
     >
       <label for="selectArea">
@@ -80,81 +81,14 @@
         <option value="台中市">台中市</option>
         <option value="高雄市">高雄市</option>
       </select>
-    </div>
+    </form>
 
-    <!-- <ul class="js_address_list
-      address_list
-      d_flex"
-    >
-      <li class="address_list_item maxWidth_md">
-
-        <div class="address_list_img">
-          <img
-            src="./assets/images/locate_Imgs/locate1.jpeg"
-            alt="商品圖片_${product.id}"
-          >
-        </div>
-        <div class="address_list_content">
-          <h3 class="address_list_content_title">
-            ${product.title}
-          </h3>
-          <p class="fw_md
-            address_list_content_price
-            text_color_primary"
-          >
-            ntd${product.price}
-          </p>
-
-        </div>
-      </li>
-
-
-      <li class="address_list_item maxWidth_md">
-
-        <div class="address_list_img">
-          <img
-            src="./assets/images/locate_Imgs/locate1.jpeg"
-            alt="商品圖片_${product.id}"
-          >
-        </div>
-        <div class="address_list_content">
-          <h2 class="address_list_content_title">
-            ${product.title}
-          </h2>
-          <p class="fw_md
-            address_list_content_price
-            text_color_primary"
-          >
-            ntd${product.price}
-          </p>
-
-        </div>
-      </li>
-
-
-      <li class="address_list_item maxWidth_md">
-
-        <div class="address_list_img">
-          <img
-            src="./assets/images/locate_Imgs/locate1.jpeg"
-            alt="商品圖片_${product.id}"
-          >
-        </div>
-        <div class="address_list_content">
-          <h2 class="address_list_content_title">
-            ${product.title}
-          </h2>
-          <p class="fw_md
-            address_list_content_price
-            text_color_primary"
-          >
-            ntd${product.price}
-          </p>
-
-        </div>
-      </li>
-    </ul> -->
-  </div>
+    <ul class="js_location_lists
+      location_lists
+      d_flex
+      flex_wrap_wrap"
+    ></ul>
+  </section>
 </main>
 
   <footer class="footer">
@@ -180,12 +114,12 @@
               href="products.html"
               class="footer_navbar_item_link"
             >
-            系列鏡框
+              系列鏡框
             </a>
           </li>
           <li class="footer_navbar_item">
             <a
-              href="storeAddress.html"
+              href="locates.html"
               class="footer_navbar_item_link"
             >
               門市據點
@@ -193,7 +127,7 @@
           </li>
           <li class="footer_navbar_item">
             <a
-              href="#"
+              href="blog.html"
               class="footer_navbar_item_link"
             >
               部落格
@@ -201,7 +135,7 @@
           </li>
           <li class="footer_navbar_item">
             <a
-              href="#"
+              href="faq.html"
               class="footer_navbar_item_link"
             >
               常見問題
@@ -315,7 +249,6 @@
 
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
-  <!-- <script src="./assets/js/storeAddress.js"></script> -->
 </body>
 
 </html>

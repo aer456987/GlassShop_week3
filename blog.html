@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SEE IT CLEARLY - 系列鏡框</title>
+  <title>SEE IT CLEARLY - 部落格</title>
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -59,110 +59,119 @@
   </header>
 
   
-<nav class="product_navbar">
+<nav class="blog_navbar">
   <div class="container">
-    <form>
-      <ul class="d_flex">
+    <div class="d_flex
+      flex_justify_space_between
+      flex_align_items_center"
+    >
+      <form>
+        <ul class="d_flex">
 
-        <li class="product_navbar_item">
-          <input
-            type="radio"
-            name="product_navbar_menu"
-            value="product_optical"
-            id="product_optical"
-            class="product_navbar_radio"
-            checked
-          >
-          <label
-            for="product_optical"
-            class="js_product_navbar_label
-              product_navbar_label
-              d_flex
-              flex_justify_center
-              fw_md"
-          >
-          <span class="product_navbar_icon">
-            <img
-              src="./assets/images/icons/icon-auto-awesome-b.svg"
-              alt="選單icon"
+          <li class="blog_navbar_item">
+            <input
+              type="radio"
+              name="blog_navbar_menu"
+              value="blog_new_news"
+              id="blog_new_news"
+              class="blog_navbar_radio"
+              checked
             >
-          </span>
-          OPTICAL
-        </label>
+            <label
+              for="blog_new_news"
+              class="blog_navbar_label
+                d_flex
+                flex_justify_center
+                fw_md"
+            >
+            最新消息
+          </label>
+          <span></span>
         </li>
 
-        <li class="product_navbar_item">
+        <li class="blog_navbar_item">
           <input
             type="radio"
-            name="product_navbar_menu"
-            value="product_sunglasses"
-            id="product_sunglasses"
-            class="product_navbar_radio"
+            name="blog_navbar_menu"
+            value="blog_special_plan"
+            id="blog_special_plan"
+            class="blog_navbar_radio"
           >
           <label
-            for="product_sunglasses"
-            class="js_product_navbar_label
-              product_navbar_label
+            for="blog_special_plan"
+            class="blog_navbar_label
               d_flex
               flex_justify_center
               fw_md"
           >
-          <span class="product_navbar_icon">
-            <img
-              src="./assets/images/icons/icon-sun-black.svg"
-              alt="選單icon"
-            >
-          </span>
-          SUNGLASSES
-        </label>
+            特別企劃
+          </label>
+          <span></span>
         </li>
 
-        <li class="product_navbar_item">
+        <li class="blog_navbar_item">
           <input
             type="radio"
-            name="product_navbar_menu"
-            value="product_functional"
-            id="product_functional"
-            class="fw_md product_navbar_radio"
+            name="blog_navbar_menu"
+            value="blog_new_product"
+            id="blog_new_product"
+            class="fw_md blog_navbar_radio"
           >
           <label
-            for="product_functional"
-            class="js_product_navbar_label
-              product_navbar_label
+            for="blog_new_product"
+            class="blog_navbar_label
               d_flex
               flex_justify_center
               fw_md"
           >
-          <span class="product_navbar_icon">
-            <img
-              src="./assets/images/icons/icon-thunder-black_1.svg"
-              alt="選單icon"
-            >
-          </span>
-          FUNCTIONAL
-        </label>
+            新品上市
+          </label>
+          <span></span>
+        </li>
+
+        <li class="blog_navbar_item">
+          <input
+            type="radio"
+            name="blog_navbar_menu"
+            value="blog_knowledge"
+            id="blog_knowledge"
+            class="fw_md blog_navbar_radio"
+          >
+          <label
+            for="blog_knowledge"
+            class="blog_navbar_label
+              d_flex
+              flex_justify_center
+              fw_md"
+          >
+            鏡框小知識
+          </label>
+          <span></span>
         </li>
       </ul>
-    </form>
+      </form>
+      <a href="#">
+        <img
+          src="./assets/images/icons/icon-search.svg"
+          alt="搜尋icon"
+          class="search_icon"
+        >
+      </a>
+    </div>
   </div>
 </nav>
 
-<section>
-  <ul class="js_product_banners_lists product_banners_lists">
-  </ul>
-</section>
-
-<main class="prodocuts_page_content">
+<main class="base_page_content">
   <section class="container">
-    <h2 class="js_prodocuts_title fw_md">Celluloid Combi</h2>
-    <h3>賽璐珞鈦金屬混合鏡框</h3>
 
-    <ul class="js_prodocuts_list
-      prodocuts_list
-      d_flex
-      flex_wrap_wrap
-      flex_justify_space_between"
-    ></ul>
+    <h2 class="fw_lg page_title">
+      部落格
+    </h2>
+
+    <ul class="js_blog_lists
+      blog_lists"
+    >
+    </ul>
 
     <form class="js_pagination pagination">
       <ul class="pagination_form
@@ -191,7 +200,6 @@
             name="pagination"
             id="pagination_num_1"
             class="pagination_link"
-            checked
           >
           <label
             for="pagination_num_1"
@@ -208,6 +216,7 @@
             name="pagination"
             id="pagination_num_2"
             class="pagination_link"
+            checked
           >
           <label
             for="pagination_num_2"
