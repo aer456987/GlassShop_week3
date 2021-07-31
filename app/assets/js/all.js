@@ -654,34 +654,6 @@ function blogSrt(blog) {
   `;
 }
 
-// 部落格頁
-function blogSrt(faq) {
-  return `
-  <li class="faq_list">
-    <h3 class="fw_lg faq_heading">
-      Q${faq.id}.${faq.title}
-    </h3>
-    <ul class="faq_answer">
-      <li>
-        <p>
-          A${faq.id}.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。
-        </p>
-      </li>
-      <li>
-        <p>
-          當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。
-        </p>
-      </li>
-      <li>
-        <p>
-          他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
-        </p>
-      </li>
-    </ul>
-  </li>
-  `;
-}
-
 
 // 畫面初始渲染
 // 商品頁面
