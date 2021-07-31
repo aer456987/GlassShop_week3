@@ -1,3 +1,4 @@
+// 下拉選單
 .locate_form
   margin-bottom: 32px
   label
@@ -19,7 +20,6 @@
       +font(16px, 1.5)
       width: 237px
       padding: 10px 16px 12px
-
   +mobile
     margin-bottom: 20px
     label
@@ -31,13 +31,15 @@
       padding-top: 7px
       padding-bottom: 9px
 
+
+// 門市列表
 .location_lists
   margin: 0 -15px
 
 .location_list_item
   margin-bottom: 32px
   padding: 0 15px
-  border: solid 1px red
+
   +pad
     max-width: 50%
     margin-bottom: 20px
@@ -45,11 +47,8 @@
     max-width: 100%
     margin-bottom: 16px
 
-
-
 .location_list_img
   position: relative
-  border: solid 1px red
   background: $color-dark
   overflow: hidden
   img
@@ -62,6 +61,7 @@
     left: 50%
     transform: translate(-50%, -50%)
     opacity: 0
+
   &:hover
     img
       transform: scale(1.1)
@@ -75,22 +75,26 @@
       opacity: .9
 
 
-
+// 地點資訊 - 標題
 .location_list_content_title
   +font(24px, 1.5)
   padding: 12px 24px
+
   +pad
     padding-top: 8px
     padding-bottom: 8px
     font-size: 16px
 
+// 地點資訊 - 內容區塊
 .location_list_content
   padding: 16px 24px
   li:not(:last-child)
     margin-bottom: 8px
 
+// 地點資訊 - 內容文字
 .location_list_content_text
   +font(20px, 1.5)
+
   +pad
     font-size: 14px
 
@@ -101,10 +105,10 @@
   img
     height: 100%
     display: block
+
   +pad
     +box-size(20px, 20px)
 
-  
 .location_list_btn
   +font(19px, 1.42)
   display: block
@@ -114,9 +118,11 @@
   color: $color-light
   background: $color-dark
   transition-duration: .5s
+
   &:hover
     background: $color-gray-600
     transition-duration: .2s
+
   +pad
     +font(14px, 1.5)
     padding: 16px

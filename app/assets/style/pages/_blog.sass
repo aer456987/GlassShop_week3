@@ -1,8 +1,10 @@
+// 文章分類選單
 .blog_navbar
   margin-left: -24px
   color: $color-light
   background: $color-primary-dark
   overflow: hidden
+
   +pad
     margin-left: -16px
   +mobile
@@ -33,7 +35,7 @@
   box-shadow: 0 0 20px 0 darken($color-primary-dark, 5)
 
 
-
+// 文章內容清單
 .blog_list
   margin-bottom: 60px
   +pad
@@ -41,7 +43,6 @@
   +mobile
     flex-wrap: wrap
     margin-bottom: 20px
-
 
 .blog_list_img
   width: 100%
@@ -74,8 +75,11 @@
     max-width: 100%
     height: 217px
 
+
+// 文章主內容區塊
 .blog_list_content
   padding-left: 30px
+
   +pad
     max-width: 50%
   +mobile
@@ -83,6 +87,7 @@
     max-width: 100%
     padding-left: 0
 
+// 文章標題
 .blog_list_heading
   +font(32px, 1.97)
   display: inline-block
@@ -98,6 +103,7 @@
     bottom: 10px
     border: solid 1px transparent
     transition-duration: .2s
+
   &:hover
     a
       color: $color-primary
@@ -114,6 +120,7 @@
     &::after
       bottom: 15px
 
+// 文章副標
 .blog_list_subtitle
   +font(20px, 1.5)
 
@@ -122,6 +129,7 @@
   +mobile
     +font(14px, 2.143)
 
+// 發布時間
 .blog_list_date
   +font(16px, 1.5)
 
@@ -129,6 +137,7 @@
     +font(14px, 1.175)
 
 
+// 文章文字主區塊
 .blog_list_text_content
   margin-top: 24px
 
@@ -140,6 +149,7 @@
 
 .blog_list_text_content:last-child
   display: none
+
   +pad
     display: block
   +mobile
@@ -171,6 +181,7 @@
     bottom: 10px
     border: solid 1px transparent
     transition-duration: .2s
+
   &:hover
     color: $color-primary
     transition-duration: .2s
@@ -181,6 +192,7 @@
       width: 100%
       border-color: $color-primary
       transition-duration: .2s
+
   +pad
     display: inline
     font-size: 14px

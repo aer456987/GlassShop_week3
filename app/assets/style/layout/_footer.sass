@@ -1,19 +1,25 @@
+// footer 本體
 .footer
   padding: 32px 0
   color: $color-light
   background: $color-primary
+
   +pad
     padding-bottom: 21px
   +mobile
     padding-top: 24px
     padding-bottom: 24px
 
+
+// footer 內容
 .footer_content
   +mobile
     flex-wrap: nowrap
     flex-direction: row-reverse
     align-items: start
 
+
+// footer 連結
 .footer_navbar
   +mobile
     display: none
@@ -23,8 +29,10 @@
   display: block
   padding: 12px 24px
   color: $color-light
+
   &:hover
     color: $color-primary-dark
+
   +pad
     padding: 6px 20px
 
@@ -33,6 +41,7 @@
     padding-left: 0
 
 
+// 社群icon
 .community_icons_img
   &:hover
     img
@@ -46,9 +55,11 @@
   margin-right: 24px
 
 
+// 聯絡方式
 .contact_datas
   width: 100%
   padding: 24px 0
+
   +pad
     padding-top: 12px
     padding-bottom: 20px
@@ -60,6 +71,7 @@
   +font(36px, 1.5)
   span, p
     display: inline-block
+
   +pad
     +font(20px, 1.5)
   +mobile
@@ -67,6 +79,7 @@
 
 .contact_tel
   margin-bottom: 16px
+
   +pad
     margin-bottom: 12px
   +mobile
@@ -75,6 +88,7 @@
 .contact_icon
   +box-size(48px, 48px)
   margin-right: 16px
+
   +pad
     +box-size(24px, 24px)
     margin-right: 8px
@@ -88,10 +102,11 @@
 
 .contact_text
   color: $color-light
+
   &:hover
     color: $color-primary-dark
 
-
+// 版權聲明
 .statement
   padding: 32px 0 7px
   border-top: solid 1px $color-light
@@ -106,6 +121,7 @@
 .statement_text
   +font(16px, 1.5)
   font-weight: 500
+
   +mobile
     +font(14px, 1.72)
     width: 100%
@@ -113,11 +129,13 @@
 .statement_links
   li
     display: inline-block
+
     +mobile
       display: block
 
   li:first-child
     margin-right: 48px
+
   +pad
     margin-top: 12px
   +mobile
@@ -126,6 +144,7 @@
 .statement_link
   +font(14px, 1.5)
   color: $color-light
+
   +mobile
     padding: 8px 0
 

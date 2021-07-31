@@ -1,10 +1,13 @@
+// 頁面主區塊
 .article_page_content
   padding-bottom: 160px
+
   +pad
     margin-bottom: 96px
   +mobile
     margin-bottom: 56px
 
+// 文章副標
 .article_subtitle
   +font(28px, 1.5)
 
@@ -13,19 +16,31 @@
   +mobile
     +font(14px, 1.5)
 
+// 文章主區塊
 .article_content
   +mobile
     max-width: 100%
 
+// 文章內容區塊
 .article_lists
   margin: 24px 0 9px
+
   +pad
     margin-bottom: 5px
   +mobile
     margin-top: 20px
     margin-bottom: -3px
 
+// 文章內容標題
+.article_title
+  +font(48px, 1.98)
 
+  +pad
+    +font(32px, 2.97)
+  +mobile
+    +font(20px, 1.5)
+
+// 文章內容文字
 .article_text
   +font(20px, 1.5)
   padding: 24px 0 40px
@@ -43,9 +58,11 @@
       margin-bottom: 24px
 
 
+// 下方資訊
 .other_msg
   .blog_tags
     display: none
+
   +pad
     max-width: 100%
   +mobile
@@ -53,6 +70,8 @@
       display: block
       margin-top: 30px
 
+
+// 分享 icons
 .share_icons
   +font(20px, 1.5)
   margin-bottom: 20px
@@ -63,7 +82,6 @@
     +font(16px, 1.875)
     p
     margin-right: 16px
-
   +mobile
     margin-bottom: 15px
 
@@ -72,11 +90,19 @@
   width: 20px
   margin-right: 16px
   transition-duration: .25s
+
   &:hover
     transform: scale(1.2)
     transition-duration: .25s
 
+.share_icon:last-child
+  transform: scale(1.2)
 
+  &:hover
+    transform: scale(1.4)
+
+
+// 上下頁切換
 .blog_page_switch
   padding-top: 24px
   border-top: solid 1px $color-gray-300
@@ -85,7 +111,7 @@
     display: none
     +mobile
       display: block
-  
+
   +pad
     padding-top: 16px
   +mobile
@@ -99,9 +125,11 @@
   display: block
   color: $color-dark
   transition-duration: .2s
+
   &:hover
     color: $color-primary
     transition-duration: .2s
+
   +pad
     +font(16px, 1.875)
   +mobile
@@ -186,13 +214,13 @@
     display: none
 
 
-
+// 文章標籤( 全部落格 )
 .blog_tags
   display: block
   padding-left: 30px
+
   +mobile
     display: none
-
 
 .blog_tags_title
   +font(28px, 1.5)
@@ -216,10 +244,27 @@
       bottom: -5px
 
 .blog_tag
+  +font(24px, 1.5)
   margin-right: 24px
+  font-weight: 700
+  color: $text-color-primary
+
   &:hover
     color: $color-primary-dark
+
   +pad
+    +font(16px, 2.25)
     margin-right: 16px
   +mobile
+    +font(14px, 2.572)
     margin-right: 8px
+
+
+// 文章標籤( 單頁文章 tag )
+.article_tags
+  .blog_tag:first-child
+    margin-right: 16px
+    +pad
+      margin-right: 8px
+    +mobile
+      margin-right: 4px

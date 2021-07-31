@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap');
-
 *, *::before, *::after
   box-sizing: border-box
 
@@ -15,7 +13,6 @@ img
   max-width: 1140px
   margin: 0 auto
   padding: 0 15px
-  // border: solid 1px $color-gray-300
 
   +pad
     max-width: 100%
@@ -26,8 +23,10 @@ img
     padding-left: 15px
     padding-right: 15px
 
+// 頁面通用的間距設定
 .base_page_content
   padding: 96px 0 128px
+
   +pad
     padding-top: 60px
     padding-bottom: 76px
@@ -63,19 +62,17 @@ img
 .fontStyle_italic
   font-style: italic
 
-// 寬度尺寸
+// 寬度尺寸 - 1 / 2 / 3 / 4 欄用
 .maxWidth_sm
   max-width: 25%
-
 .maxWidth_md
   max-width: 33.3333%
-
 .maxWidth_lg
   max-width: 50%
-
 .maxWidth_xl
   max-width: 100%
 
+// 寬度尺寸 - 64 / 73 欄
 .maxWidth_4
   max-width: 40%
 .maxWidth_3
@@ -115,6 +112,7 @@ img
   margin-bottom: 60px
   padding-left: 16px
   border-left: solid 8px $border-color-primary
+
   +pad
     margin-bottom: 40px
     border-width: 4px
@@ -122,7 +120,3 @@ img
     +font(28px, 1.2.86)
     margin-bottom: 24px
     padding-left: 8px
-
-// 可刪除
-.border
-  border: solid 1px $border-color-gray-100

@@ -13,12 +13,14 @@
 .page_padding
   padding-top: 60px
   padding-bottom: 80px
+
   +pad
     padding-top: 40px
     padding-bottom: 56px
   +mobile
     padding-top: 32px
     padding-bottom: 40px
+
 
 // 表頭
 .header_title
@@ -40,7 +42,6 @@
       font-size: 48px
     span
       font-size: 20px
-
   +mobile
     height: 394px
     h1
@@ -52,6 +53,7 @@
 // 服務介紹
 .service_items
   background: rgba($color-primary, .05)
+
   .page_padding
     +pad
       padding-left: 77px
@@ -68,6 +70,7 @@
 
 .service_list_item
   max-width: 24%
+
   +pad
     max-width: 47%
   +mobile
@@ -96,6 +99,7 @@
 // 產品分類 
 .product_img
   max-width: 57%
+
   +pad
     max-width: 50%
   +mobile
@@ -108,22 +112,26 @@
 
 .product_list_item
   overflow: hidden
+
   +mobile
     position: relative
     justify-content: center
 
 .product_list_item:nth-child(2)
   flex-direction: row-reverse
+
   +pad
     flex-direction: row
 
 .product_list_item:not(:last-child)
   margin-bottom: 32px
+
   +pad
     margin-bottom: 8px
 
 .product_content
   margin: 0 30px
+
   +mobile
     position: absolute
 
@@ -131,12 +139,14 @@
   +box-size(48px, 48px)
   display: block
   margin-right: 8px
+
   +pad
     +box-size(36px, 36px)
 
 .product_text
   +font(48px, 1.5)
   text-transform: uppercase
+
   +pad
     +font(28px, 2.57)
 
@@ -156,6 +166,7 @@
   width: 49%
   position: relative
   background: $color-light
+
   +mobile
     width: 100%
 
@@ -165,6 +176,7 @@
 
 .cooperative_img
   opacity: .5
+
   +mobile
     width: 110%
 
@@ -172,6 +184,7 @@
   +font(72px, 1.5)
   position: absolute
   z-index: 2
+
   +pad
     +font(32px, 0.78)
 
@@ -187,6 +200,7 @@
   border-radius: 4px
   box-shadow: 0 2px 6px $color-gray-100
   overflow: hidden
+
   +pad
     max-width: 48%
   +mobile
@@ -204,6 +218,7 @@
 .client_recommend_card_content
   height: 204px
   padding: 16px
+
   +pad
     padding-left: 24px
     padding-right: 24px
@@ -220,12 +235,15 @@
 .client_recommend_card_date
   color: $color-gray-300
 
+
 // 聯絡表單
 .contact_us
   background: rgba($color-primary, .05)
+
   .page_padding
     +mobile
       padding-top: 30px
+
   h2
     margin-bottom: 24px
     +mobile
@@ -234,6 +252,7 @@
 .contact_us_text
   +font(20px, 1.5)
   margin-bottom: 20px
+
   +pad
     +font(16px, 1.5)
     margin-bottom: 16px
@@ -243,17 +262,20 @@
 .contact_us_content
   max-width: 60%
   margin: 0 auto
+
   +mobile
     max-width: 100%
 
 .contact_form_item
   margin-bottom: 16px
+
   +pad
     margin-bottom: 8px
 
 .contact_form_label
   +font(16px, 1.5)
   margin-bottom: 4px
+
   +pad
     +font(14px, 1.5)
 
@@ -274,7 +296,6 @@
   +pad
     margin-bottom: 20px
 
-
 .contact_form_buttons
   text-align: center
 
@@ -286,6 +307,7 @@
   color: $color-light
   background: $color-primary
   transition-duration: .3s
+
   &:hover
     background: darken($color-primary, 5)
     cursor: pointer

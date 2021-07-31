@@ -51,6 +51,7 @@
   position: relative
   font-size: 1px
   overflow: hidden
+
   +mobile
     height: 184px
 
@@ -59,6 +60,7 @@
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
+
   +pad
     width: 150%
   +mobile
@@ -75,6 +77,7 @@
     +font(32px, 1.5)
     margin-bottom: 40px
     text-align: center
+
   +pad
     padding-top: 56px
     padding-bottom: 96px
@@ -92,18 +95,22 @@
       +font(16px, 2.4)
       margin-bottom: 20px
 
+
+// 商品總列表
 .prodocuts_list
   margin: 0 -15px
 
 .prodocuts_list_item
   padding: 0 15px
   margin-bottom: 104px
+
   +pad
     max-width: 50%
     margin-bottom: 72px
   +mobile
     max-width: 100%
     margin-bottom: 32px
+
 
 // opticals 類別
 .prodocut_opticals:nth-child(n+9)
@@ -126,17 +133,20 @@
     display: none
 
 
+// 商品圖片
 .prodocuts_list_img
   max-width: 100%
 
-
+// 商品標題 & 價格
 .prodocuts_list_content_title, .prodocuts_list_content_price
   +font(24px, 1.5)
   text-transform: uppercase
+
   +pad
     line-height: 1.25
   +mobile
     +font(16px, 1.875)
+
 
 // 商品顏色
 .prodocut_colors
@@ -146,9 +156,12 @@
   +box-size(24px, 24px)
   display: inline-block
   border-radius: 4px
+
   +mobile
     +box-size(16px, 16px)
+
 .prodocut_color_brown
   background: $color-brown
+
 .prodocut_color_brown_dark
   background: $color-brown-dark
