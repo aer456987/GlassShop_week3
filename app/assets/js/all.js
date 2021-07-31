@@ -1,9 +1,8 @@
 const prodocutsTitle = document.querySelector('.js_prodocuts_title'); // 商品標題
 const productNavbarLabels = document.querySelectorAll('.js_product_navbar_label'); // 商品分類表
-
 const prodocutsListDom = document.querySelector('.js_prodocuts_list'); // 商品內容渲染列表
 const pagination = document.querySelector('.js_pagination'); // 分頁
-// 商品資訊
+// 頁面資料
 const productDatas = {
   optical: {
     title: 'Celluloid Combi',
@@ -331,7 +330,8 @@ const blogDatas = [
   },
 ];
 
-// ===============商品頁渲染設定===============
+
+// 商品頁  banner & 分類 & 字串
 // bannerImg 渲染用字串
 function bannerImgSrt(bannerImg) {
   return `
@@ -405,7 +405,7 @@ function productSunglassesStr(product) { // 渲染字串
     </li>
   `;
 }
-// 商品渲染 - functional
+// 商品渲染 - functional 渲染用字串
 function productFunctionalStr(product) { // 渲染字串
   return `
   <li class="prodocuts_list_item prodocut_sunglasses maxWidth_md">
@@ -479,7 +479,9 @@ function clickProductRenderEvent() {
   });
 }
 
-// ===============門市據點渲染設定===============
+
+// 其他頁面字串
+// 門市據點
 function locateSrt(locate) {
   return `
     <li class="location_list_item maxWidth_md">
@@ -554,7 +556,7 @@ function locateSrt(locate) {
   `;
 }
 
-// ===============常見問題渲染設定===============
+// 常見問題
 function faqSrt(faq) {
   return `
   <li class="faq_list">
@@ -582,7 +584,7 @@ function faqSrt(faq) {
   `;
 }
 
-// ===============部落格渲染設定===============
+// 部落格
 function blogSrt(blog) {
   return `
   <li class="blog_list d_flex">
@@ -652,37 +654,37 @@ function blogSrt(blog) {
   `;
 }
 
+// 部落格頁
+function blogSrt(faq) {
+  return `
+  <li class="faq_list">
+    <h3 class="fw_lg faq_heading">
+      Q${faq.id}.${faq.title}
+    </h3>
+    <ul class="faq_answer">
+      <li>
+        <p>
+          A${faq.id}.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。
+        </p>
+      </li>
+      <li>
+        <p>
+          當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。
+        </p>
+      </li>
+      <li>
+        <p>
+          他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
+        </p>
+      </li>
+    </ul>
+  </li>
+  `;
+}
 
-// ===============常見問題渲染設定===============
-// function blogSrt(faq) {
-//   return `
-//   <li class="faq_list">
-//     <h3 class="fw_lg faq_heading">
-//       Q${faq.id}.${faq.title}
-//     </h3>
-//     <ul class="faq_answer">
-//       <li>
-//         <p>
-//           A${faq.id}.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。
-//         </p>
-//       </li>
-//       <li>
-//         <p>
-//           當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。
-//         </p>
-//       </li>
-//       <li>
-//         <p>
-//           他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
-//         </p>
-//       </li>
-//     </ul>
-//   </li>
-//   `;
-// }
 
-// ===============進入畫面後預設渲染函式===============
-// 商品頁面 - 進入畫面後預設渲染函式
+// 畫面初始渲染
+// 商品頁面
 function initProduct() {
   if (prodocutsTitle) {
     prodocutsTitle.textContent = productDatas.optical.title;
@@ -693,8 +695,7 @@ function initProduct() {
   }
 }
 
-
-// 門市據點 - 進入畫面後預設渲染函式
+// 門市據點
 function initLocate() {
   const locateListDom = document.querySelector('.js_location_lists');
 
@@ -707,7 +708,7 @@ function initLocate() {
   }
 }
 
-// 常見問題 - 進入畫面後預設渲染函式
+// 常見問題
 function initFaq() {
   const faqListsDom = document.querySelector('.js_faq_lists');
 
@@ -720,7 +721,7 @@ function initFaq() {
   }
 }
 
-// 部落格 - 進入畫面後預設渲染函式
+// 部落格
 function initBlog() {
   const blogListsDom = document.querySelector('.js_blog_lists');
 
@@ -735,7 +736,7 @@ function initBlog() {
   }
 }
 
-// ===================================
+
 // 初始化  
 function init(){
   initProduct();
