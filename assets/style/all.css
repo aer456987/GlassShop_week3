@@ -98,6 +98,9 @@ img {
 .text_color_gray_400 {
   color: #6C6C6C; }
 
+.border {
+  border: solid 1px rgba(0, 0, 0, 0.2); }
+
 .fw_sm {
   font-weight: 400; }
 
