@@ -1,0 +1,50 @@
+.breadcrumb
+  display: flex
+  padding: 8px 0
+
+.breadcrumb_item
+  +font(16px, 1.5)
+  a
+    color: $color-dark
+
+  &::after
+    content: '/'
+    margin-right: 2px
+
+  +pad
+    +font(14px, 1.715)
+  +mobile
+    line-height: 1.5
+
+.breadcrumb_item:last-child
+  color: $color-primary
+  &::after
+    content: ''
+
+
+.blog_tag
+  +font(24px, 1.5)
+  font-weight: 700
+  color: $text-color-primary
+
+  +pad
+    +font(16px, 2.25)
+  +mobile
+    +font(14px, 2.572)
+
+.article_tags
+  .blog_tag:first-child
+    margin-right: 16px
+    +pad
+      margin-right: 8px
+    +mobile
+      margin-right: 4px
+
+
+.article_title
+  +font(48px, 1.98)
+
+  +pad
+    +font(32px, 2.97)
+  +mobile
+    +font(20px, 1.5)

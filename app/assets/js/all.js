@@ -283,46 +283,51 @@ const faqDatas = [
     title: '請問可以單購買鏡框嗎？',
   },
 ];
-const faqDatas = [
+const blogDatas = [
   {
     id: 1,
     date: '2020/02/14',
-    titile: '情人特別企劃',
-    asd: '2020 Valentine’s Special',
+    title: '情人特別企劃',
+    subtitle: '2020 Valentine’s Special',
     content: '一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！<br>即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯',
-    imgUrl: '',
+    mainPointContent: '一年一度西洋情人節即將到來，我們推出最強「情人 節企劃」，為這個甜蜜的節日加溫。本次拍攝的鏡框 款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一 半來個低調情侶單品，結合彼此喜好、找出合適框型 款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！ 即日起至2/16為止，不論是熱戀情侶⋯⋯',
+    imgUrl: './assets/images/blog_Imgs/blog-1.png',
   },
   {
     id: 2,
     date: '2020/02/02',
-    titile: '街頭潮人訪問',
-    asd: 'Street Interview',
+    title: '街頭潮人訪問',
+    subtitle: 'Street Interview',
     content: '炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為主，但有時單純只穿搭 T 恤或短袖開襟襯衫，又覺得整體造型度有點不足嗎？那麼不妨可以透過「配件」，為穿搭點綴出與眾不同的視覺層次，而本季有哪些必備的配件系列呢？一起從以下推薦的 3 款單品，讓你瞬間帥氣爆棚散發型男品味⋯⋯',
-    imgUrl: '',
+    mainPointContent: '炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為 主，但有時單純只穿搭 T 恤或短袖開襟襯衫，又覺 得整體造型度有點不足嗎？那麼不妨可以透過「配 件」，為穿搭點綴出與眾不同的視覺層次，而本季有 哪些必備的配件系列呢？一起從以下推薦的 3 款單 品，讓你瞬間帥氣爆棚散發型男品味⋯⋯',
+    imgUrl: './assets/images/blog_Imgs/blog-2.png',
   },
   {
     id: 3,
     date: '2020/02/02',
-    titile: '春季新品上市',
-    asd: 'New Selection',
+    title: '春季新品上市',
+    subtitle: 'New Selection',
     content: '2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯',
-    imgUrl: '',
+    mainPointContent: '2020 年春季的光學眼鏡跳脫前幾季流行的復古框 型，比起圓框與小方框等文青風格，偏向個性款式的 眉框眼鏡成為這一季的耀眼之星。除了經典款式如 黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重 的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強 調出特殊設計感，俐落時髦的造型搭配⋯⋯',
+    imgUrl: './assets/images/blog_Imgs/blog-3.png',
   },
   {
     id: 4,
     date: '2020/01/18',
-    titile: '設計師獨享鏡框優惠',
-    asd: 'Sales for Designer',
+    title: '設計師獨享鏡框優惠',
+    subtitle: 'Sales for Designer',
     content: '2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯',
-    imgUrl: '',
+    mainPointContent: '2020 年春季的光學眼鏡跳脫前幾季流行的復古框 型，比起圓框與小方框等文青風格，偏向個性款式的 眉框眼鏡成為這一季的耀眼之星。除了經典款式如 黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重 的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強 調出特殊設計感，俐落時髦的造型搭配⋯⋯',
+    imgUrl: './assets/images/blog_Imgs/blog-4.png',
   },
   {
     id: 5,
     date: '2019/08/07',
-    titile: '抵抗夏日大作戰',
-    asd: 'Summer Special',
+    title: '抵抗夏日大作戰',
+    subtitle: 'Summer Special',
     content: '2020 年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強調出特殊設計感，俐落時髦的造型搭配一件簡單的白襯衫就相當有型，是喜愛時尚質感人士絕不能錯過的必備款式⋯⋯',
-    imgUrl: '',
+    mainPointContent: '2020 年春季的光學眼鏡跳脫前幾季流行的復古框 型，比起圓框與小方框等文青風格，偏向個性款式的 眉框眼鏡成為這一季的耀眼之星。除了經典款式如 黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重 的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強 調出特殊設計感，俐落時髦的造型搭配⋯⋯',
+    imgUrl: './assets/images/blog_Imgs/blog-5.png',
   },
 ];
 
@@ -478,10 +483,21 @@ function clickProductRenderEvent() {
 function locateSrt(locate) {
   return `
     <li class="location_list_item maxWidth_md">
-      <img
-        src="${locate.imgUrl}"
-        alt="商品圖片_${locate.id}"
-      >
+      <div class="location_list_img">
+        <a
+          href="locate.html"
+        >
+          <img
+            src="${locate.imgUrl}"
+            alt="商品圖片_${locate.id}"
+          >
+          <img
+            src="./assets/images/icons/icon-search.svg"
+            alt="搜尋icon"
+            class="search_icon"
+          >
+        </a>
+      </div
       <div>
         <h3 class="location_list_content_title border">
           ${locate.areaName}
@@ -566,33 +582,104 @@ function faqSrt(faq) {
   `;
 }
 
-// ===============常見問題渲染設定===============
-function blogSrt(faq) {
+// ===============部落格渲染設定===============
+function blogSrt(blog) {
   return `
-  // <li class="faq_list">
-  //   <h3 class="fw_lg faq_heading">
-  //     Q${faq.id}.${faq.title}
-  //   </h3>
-  //   <ul class="faq_answer">
-  //     <li>
-  //       <p>
-  //         A${faq.id}.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。
-  //       </p>
-  //     </li>
-  //     <li>
-  //       <p>
-  //         當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。
-  //       </p>
-  //     </li>
-  //     <li>
-  //       <p>
-  //         他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
-  //       </p>
-  //     </li>
-  //   </ul>
-  // </li>
+  <li class="blog_list d_flex">
+    <div class="blog_list_img maxWidth_6">
+      <a href="blog_article.html">
+        <img
+          src="${blog.imgUrl}"
+          alt="文章圖片_${blog.id}"
+        >
+        <img
+          src="./assets/images/icons/icon-search.svg"
+          alt="搜尋icon"
+          class="search_icon"
+        >
+      </a>
+    </div>
+
+    <ul class="blog_list_content maxWidth_4">
+      <li>
+        <h3 class="blog_list_heading">
+          <a
+            href="blog_article.html"
+            class="text_color_primary_dark"
+          >
+            ${blog.title}
+          </a>
+        </h3>
+      </li>
+
+      <li class="d_flex flex_justify_space_between flex_align_items_center">
+        <p class="blog_list_subtitle fw_md">
+          ${blog.subtitle}
+        </p>
+        <p class="blog_list_date fw_md">
+          ${blog.date}
+        </p>
+      </li>
+
+      <li class="blog_list_text_content"
+      >
+        <p class="blog_list_text">
+          ${blog.content}
+        </p>
+        <a
+          href="blog_article.html"
+          class="blog_list_more fw_xl text_color_primary_dark"
+        >
+          MORE
+        </a>
+      </li>
+
+      <li class="blog_list_text_content"
+      >
+        <p class="blog_list_text">
+          ${blog.mainPointContent}
+          <a
+            href="blog_article.html"
+            class="fw_xl blog_list_more
+            text_color_primary_dark"
+          >
+            MORE
+          </a>
+        </p>
+      </li>
+    </ul>
+  </li>
   `;
 }
+
+
+// ===============常見問題渲染設定===============
+// function blogSrt(faq) {
+//   return `
+//   <li class="faq_list">
+//     <h3 class="fw_lg faq_heading">
+//       Q${faq.id}.${faq.title}
+//     </h3>
+//     <ul class="faq_answer">
+//       <li>
+//         <p>
+//           A${faq.id}.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。
+//         </p>
+//       </li>
+//       <li>
+//         <p>
+//           當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。
+//         </p>
+//       </li>
+//       <li>
+//         <p>
+//           他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
+//         </p>
+//       </li>
+//     </ul>
+//   </li>
+//   `;
+// }
 
 // ===============進入畫面後預設渲染函式===============
 // 商品頁面 - 進入畫面後預設渲染函式
@@ -605,6 +692,7 @@ function initProduct() {
     clickProductRenderEvent();
   }
 }
+
 
 // 門市據點 - 進入畫面後預設渲染函式
 function initLocate() {
@@ -640,10 +728,10 @@ function initBlog() {
     pagination.setAttribute('style', 'display: block;');
 
     let str = '';
-    // faqDatas.forEach((item) => {
-    //   str += faqSrt(item);
-    // });
-    // blogListsDom.innerHTML = str;
+    blogDatas.forEach((item) => {
+      str += blogSrt(item);
+    });
+    blogListsDom.innerHTML = str;
   }
 }
 

@@ -1,0 +1,188 @@
+.blog_navbar
+  margin-left: -24px
+  color: $color-light
+  background: $color-primary-dark
+  overflow: hidden
+  +pad
+    margin-left: -16px
+  +mobile
+    display: none
+
+.blog_navbar_radio
+  display: none
+
+.blog_navbar_label
+  +font(20px, 1.2)
+  padding: 12px 24px
+  margin-bottom: 3px
+  border-radius: 0 0 8px 8px
+  transition-duration: .25s
+  cursor: pointer
+
+  &:hover
+    background: $color-primary
+    transition-duration: .25s
+    box-shadow: 0 0 10px 0 darken($color-primary-dark, 5)
+
+  +pad
+    +font(16px, 1.5)
+    padding: 16px
+
+.blog_navbar_radio:checked+.blog_navbar_label
+  background: $color-primary
+  box-shadow: 0 0 20px 0 darken($color-primary-dark, 5)
+
+
+
+.blog_list
+  margin-bottom: 60px
+  +pad
+    margin-bottom: 24px
+  +mobile
+    flex-wrap: wrap
+    margin-bottom: 20px
+
+
+.blog_list_img
+  width: 100%
+  position: relative
+  background: $color-dark
+  overflow: hidden
+  img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%) scale(1.3)
+    transition-duration: .3s
+    opacity: 1
+  .search_icon
+    width: 40px
+    opacity: 0
+
+  &:hover
+    img
+      transform: translate(-50%, -50%) scale(1.4)
+      transition-duration: .25s
+      opacity: .8
+    .search_icon
+      opacity: .8
+
+  +pad
+    max-width: 50%
+
+  +mobile
+    max-width: 100%
+    height: 217px
+
+.blog_list_content
+  padding-left: 30px
+  +pad
+    max-width: 50%
+  +mobile
+    width: 100%
+    max-width: 100%
+    padding-left: 0
+
+.blog_list_heading
+  +font(32px, 1.97)
+  display: inline-block
+  position: relative
+  a
+    display: block
+
+  &::after
+    content: ''
+    position: absolute
+    width: 0
+    right: 0
+    bottom: 10px
+    border: solid 1px transparent
+    transition-duration: .2s
+  &:hover
+    a
+      color: $color-primary
+    &::after
+      left: 0
+      width: 100%
+      border-color: $color-primary
+      transition-duration: .2s
+
+  +pad
+    +font(20px, 3.15)
+  +mobile
+    +font(16px, 3.94)
+    &::after
+      bottom: 15px
+
+.blog_list_subtitle
+  +font(20px, 1.5)
+
+  +pad
+    +font(16px, 1.875)
+  +mobile
+    +font(14px, 2.143)
+
+.blog_list_date
+  +font(16px, 1.5)
+
+  +pad
+    +font(14px, 1.175)
+
+
+.blog_list_text_content
+  margin-top: 24px
+
+  +pad
+    margin-top: 32px
+    display: none
+  +mobile
+    display: none
+
+.blog_list_text_content:last-child
+  display: none
+  +pad
+    display: block
+  +mobile
+    display: none
+
+
+.blog_list_text
+  +font(20px, 1.5)
+  margin-bottom: 14px
+  color: $color-gray-500
+
+  +pad
+    margin-bottom: 0
+    font-size: 14px
+
+
+.blog_list_more
+  +font(36px, 1.5)
+  display: block
+  position: relative
+  text-align: right
+  transition-duration: .2s
+
+  &::after
+    content: ''
+    position: absolute
+    width: 0
+    right: 0
+    bottom: 10px
+    border: solid 1px transparent
+    transition-duration: .2s
+  &:hover
+    color: $color-primary
+    transition-duration: .2s
+    a
+      color: $color-primary
+    &::after
+      left: 0
+      width: 100%
+      border-color: $color-primary
+      transition-duration: .2s
+  +pad
+    display: inline
+    font-size: 14px
+    &::after
+      bottom: 0px

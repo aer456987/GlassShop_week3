@@ -1,0 +1,223 @@
+.article_page_content
+  padding-bottom: 160px
+  +pad
+    margin-bottom: 96px
+  +mobile
+    margin-bottom: 56px
+
+.article_subtitle
+  +font(28px, 1.5)
+
+  +pad
+    +font(16px, 2.625)
+  +mobile
+    +font(14px, 1.5)
+
+.article_content
+  +mobile
+    max-width: 100%
+
+.article_lists
+  margin: 24px 0 9px
+  +pad
+    margin-bottom: 5px
+  +mobile
+    margin-top: 20px
+    margin-bottom: -3px
+
+
+.article_text
+  +font(20px, 1.5)
+  padding: 24px 0 40px
+  color: $color-gray-700
+
+  li:first-child
+    margin-bottom: 30px
+
+  +pad
+    font-size: 16px
+    padding-top: 16px
+    padding-bottom: 24px
+
+    li:first-child
+      margin-bottom: 24px
+
+
+.other_msg
+  .blog_tags
+    display: none
+  +pad
+    max-width: 100%
+  +mobile
+    .blog_tags
+      display: block
+      margin-top: 30px
+
+.share_icons
+  +font(20px, 1.5)
+  margin-bottom: 20px
+  p
+    margin-right: 20px
+
+  +pad
+    +font(16px, 1.875)
+    p
+    margin-right: 16px
+
+  +mobile
+    margin-bottom: 15px
+
+.share_icon
+  display: block
+  width: 20px
+  margin-right: 16px
+  transition-duration: .25s
+  &:hover
+    transform: scale(1.2)
+    transition-duration: .25s
+
+
+.blog_page_switch
+  padding-top: 24px
+  border-top: solid 1px $color-gray-300
+
+  p:nth-child(2)
+    display: none
+    +mobile
+      display: block
+  
+  +pad
+    padding-top: 16px
+  +mobile
+    flex-direction: column
+    align-items: start
+    padding-top: 10px
+
+.blog_page_switch_start, .blog_page_switch_end
+  +font(19px, 1.579)
+  position: relative
+  display: block
+  color: $color-dark
+  transition-duration: .2s
+  &:hover
+    color: $color-primary
+    transition-duration: .2s
+  +pad
+    +font(16px, 1.875)
+  +mobile
+    +font(14px, 2.143)
+
+
+.blog_page_switch_start
+  &::before
+    content: ''
+    position: relative
+    display: inline-block
+    width: 24px
+    height: 24px
+    bottom: -5px
+    margin-right: 8px
+    background-image: url('../images/icons/icon-arrow-left.svg')
+    transition-duration: .2s
+
+  &::after
+    content: ''
+    position: absolute
+    width: 0
+    right: 0
+    bottom: 0
+    border: solid 1px transparent
+    transition-duration: .2s
+
+  &:hover
+    &::before
+      background-image: url('../images/icons/icon-arrow-left-red.svg')
+      transform: translateX(-3px)
+      transition-duration: .2s
+    &::after
+      left: 0
+      width: 100%
+      border-color: $color-primary
+      transition-duration: .2s
+
+  +pad
+    &::before
+      margin-right: 4px
+  +mobile
+    margin-bottom: 8px
+    &::before
+      margin-right: 0
+
+.blog_page_switch_end
+  &::before
+    content: ''
+    position: absolute
+    width: 0
+    right: 0
+    bottom: 0
+    border: solid 1px transparent
+    transition-duration: .2s
+  &::after
+    content: ''
+    position: relative
+    display: inline-block
+    width: 24px
+    height: 24px
+    bottom: -5px
+    margin-left: 8px
+    background-image: url('../images/icons/icon-arrow.svg')
+    transition-duration: .2s
+
+  &:hover
+    &::before
+      left: 0
+      width: 100%
+      border-color: $color-primary
+      transition-duration: .2s
+    &::after
+      background-image: url('../images/icons/icon-arrow-right-red.svg')
+      transform: translateX(3px)
+      transition-duration: .2s
+
+  +pad
+    &::after
+      margin-left: 4px
+  +mobile
+    display: none
+
+
+
+.blog_tags
+  display: block
+  padding-left: 30px
+  +mobile
+    display: none
+
+
+.blog_tags_title
+  +font(28px, 1.5)
+  margin-bottom: 9px
+
+  &::before
+    content: ''
+    display: inline-block
+    position: relative
+    width: 48px
+    height: 48px
+    bottom: -10px
+    background-image: url('../images/icons/icon-tag.svg')
+    background-size: cover
+
+  +pad
+    +font(20px, 2.1)
+    &::before
+      width: 24px
+      height: 24px
+      bottom: -5px
+
+.blog_tag
+  margin-right: 24px
+  +pad
+    margin-right: 16px
+  +mobile
+    margin-right: 8px
