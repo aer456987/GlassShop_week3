@@ -1,0 +1,39 @@
+.container
+  max-width: 1140px
+  margin: 0 auto
+  padding: 0 15px
+
+  +pad
+    max-width: 100%
+    padding-left: 39px
+    padding-right: 39px
+
+  +mobile
+    padding-left: 15px
+    padding-right: 15px
+
+// 頁面通用的間距設定
+.base_page_content
+  padding: 96px 0 128px
+
+  +pad
+    padding-top: 60px
+    padding-bottom: 76px
+  +mobile
+    padding-top: 28px
+    padding-bottom: 40px
+
+// 每頁標題
+.page_title
+  +font(48px, 1.67)
+  margin-bottom: 60px
+  padding-left: 16px
+  border-left: solid 8px $border-color-primary
+
+  +pad
+    margin-bottom: 40px
+    border-width: 4px
+  +mobile
+    +font(28px, 1.2.86)
+    margin-bottom: 24px
+    padding-left: 8px
