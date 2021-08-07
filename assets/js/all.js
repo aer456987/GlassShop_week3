@@ -2,7 +2,7 @@
 
 var prodocutsTitle = document.querySelector('.js_prodocuts_title'); // 商品標題
 
-var productNavbarLabels = document.querySelectorAll('.js_product_navbar_label'); // 商品分類表
+var productNavbarItems = document.querySelectorAll('.js_product_navbar_item'); // 商品分類表
 
 var prodocutsListDom = document.querySelector('.js_prodocuts_list'); // 商品內容渲染列表
 
@@ -300,7 +300,7 @@ function renderBannerImg(bannerImg) {
 
 function productOpticalsStr(product) {
   // 渲染字串
-  return "\n    <li class=\"prodocuts_list_item prodocut_opticals maxWidth_sm maxWidth_sm_sm maxWidth_md_sm\">\n      <div class=\"prodocuts_list_img\">\n        <img\n          src=\"".concat(product.imgUrl, "\"\n          alt=\"\u5546\u54C1\u5716\u7247_").concat(product.id, "\"\n        >\n      </div>\n      <div class=\"d_flex flex_wrap_wrap flex_justify_space_between\">\n        <h2 class=\"prodocuts_list_content_title\">\n          ").concat(product.title, "\n        </h2>\n        <p class=\"fw_md prodocuts_list_content_price text_color_primary\">\n          ntd").concat(product.price, "\n        </p>\n        <ul class=\"prodocut_colors\">\n          <li class=\"prodocut_color ").concat(product.colors[0], "\"></li>\n          <li class=\"prodocut_color ").concat(product.colors[1], "\"></li>\n        </ul>\n      </div>\n    </li>\n  ");
+  return "\n    <li class=\"prodocuts_list_item prodocut_opticals maxWidth_sm maxWidth_sm_sm maxWidth_md_sm\">\n      <div class=\"prodocuts_list_img\">\n        <img\n          src=\"".concat(product.imgUrl, "\"\n          alt=\"\u5546\u54C1\u5716\u7247_").concat(product.id, "\"\n        >\n      </div>\n      <div class=\"d_flex flex_wrap_wrap flex_justify_space_between\">\n        <h3 class=\"prodocuts_list_content_title\">\n          ").concat(product.title, "\n        </h3>\n        <p class=\"fw_md prodocuts_list_content_price text_color_primary\">\n          ntd").concat(product.price, "\n        </p>\n        <ul class=\"prodocut_colors\">\n          <li class=\"prodocut_color ").concat(product.colors[0], "\"></li>\n          <li class=\"prodocut_color ").concat(product.colors[1], "\"></li>\n        </ul>\n      </div>\n    </li>\n  ");
 } // 商品渲染 - sunglasses 渲染用字串
 
 
@@ -327,10 +327,14 @@ function renderProductData(data, fn) {
 
 
 function clickProductRenderEvent() {
-  var productCategory, renderStr;
-  productNavbarLabels.forEach(function (item) {
+  var productCategory, renderStr; // productNavbarItems.removeAttribute('style');
+
+  productNavbarItems.forEach(function (item) {
     item.addEventListener('click', function (e) {
+      cancelChecked();
+
       if (e.target.innerText === 'OPTICAL') {
+        item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
         productCategory = productDatas.optical;
         renderStr = productOpticalsStr;
         prodocutsTitle.textContent = productCategory.title;
@@ -338,6 +342,7 @@ function clickProductRenderEvent() {
         renderBannerImg(productCategory.banners);
         pagination.setAttribute('style', 'display: block;');
       } else if (e.target.innerText === 'SUNGLASSES') {
+        item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
         productCategory = productDatas.sunglasses;
         renderStr = productSunglassesStr;
         prodocutsTitle.textContent = productCategory.title;
@@ -345,6 +350,7 @@ function clickProductRenderEvent() {
         renderBannerImg(productCategory.banners);
         pagination.removeAttribute('style');
       } else if (e.target.innerText === 'FUNCTIONAL') {
+        item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
         productCategory = productDatas.functional;
         renderStr = productFunctionalStr;
         prodocutsTitle.textContent = productCategory.title;
@@ -353,6 +359,13 @@ function clickProductRenderEvent() {
         pagination.removeAttribute('style');
       }
     });
+  });
+} // 取消所有選取效果
+
+
+function cancelChecked() {
+  productNavbarItems.forEach(function (item) {
+    item.removeAttribute('style');
   });
 } // 其他頁面字串
 // 門市據點
