@@ -566,7 +566,7 @@ a {
       padding-top: 32px;
       padding-bottom: 40px; } }
 
-.header {
+.header_bg {
   background-image: url("../images/banners/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
