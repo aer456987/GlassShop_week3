@@ -1,5 +1,5 @@
 const prodocutsTitle = document.querySelector('.js_prodocuts_title'); // 商品標題
-const productNavbarLabels = document.querySelectorAll('.js_product_navbar_label'); // 商品分類表
+const productNavbarItems = document.querySelectorAll('.js_product_navbar_item'); // 商品分類表
 const prodocutsListDom = document.querySelector('.js_prodocuts_list'); // 商品內容渲染列表
 const pagination = document.querySelector('.js_pagination'); // 分頁
 // 頁面資料
@@ -366,9 +366,9 @@ function productOpticalsStr(product) { // 渲染字串
         >
       </div>
       <div class="d_flex flex_wrap_wrap flex_justify_space_between">
-        <h2 class="prodocuts_list_content_title">
+        <h3 class="prodocuts_list_content_title">
           ${product.title}
-        </h2>
+        </h3>
         <p class="fw_md prodocuts_list_content_price text_color_primary">
           ntd${product.price}
         </p>
@@ -441,21 +441,28 @@ function renderProductData(data, fn){ // 產品資料渲染
 // 商品渲染事件
 function clickProductRenderEvent() {
   let productCategory, renderStr;
+  // productNavbarItems.removeAttribute('style');
 
-  productNavbarLabels.forEach((item) => {
-
+  productNavbarItems.forEach((item) => {
+    
     item.addEventListener('click', (e) => {
+      cancelChecked();
 
       if (e.target.innerText === 'OPTICAL') {
+        console.log(item);
+        item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
+
         productCategory = productDatas.optical;
         renderStr = productOpticalsStr;
-        
         prodocutsTitle.textContent = productCategory.title;
         renderProductData(productCategory.products, renderStr);
         renderBannerImg(productCategory.banners);
         pagination.setAttribute('style', 'display: block;')
 
       } else if (e.target.innerText === 'SUNGLASSES') {
+        console.log(item);
+        item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
+
         productCategory = productDatas.sunglasses;
         renderStr = productSunglassesStr;
 
@@ -465,6 +472,9 @@ function clickProductRenderEvent() {
         pagination.removeAttribute('style');
 
       } else if (e.target.innerText === 'FUNCTIONAL') {
+        console.log(item);
+        item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
+
         productCategory = productDatas.functional;
         renderStr = productFunctionalStr;
 
@@ -479,6 +489,12 @@ function clickProductRenderEvent() {
   });
 }
 
+// 取消所有選取效果
+function cancelChecked() {
+  productNavbarItems.forEach((item) => {
+    item.removeAttribute('style');
+  });
+}
 
 // 其他頁面字串
 // 門市據點
