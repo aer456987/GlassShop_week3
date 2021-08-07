@@ -449,7 +449,6 @@ function clickProductRenderEvent() {
       cancelChecked();
 
       if (e.target.innerText === 'OPTICAL') {
-        console.log(item);
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
 
         productCategory = productDatas.optical;
@@ -460,7 +459,6 @@ function clickProductRenderEvent() {
         pagination.setAttribute('style', 'display: block;')
 
       } else if (e.target.innerText === 'SUNGLASSES') {
-        console.log(item);
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
 
         productCategory = productDatas.sunglasses;
@@ -472,7 +470,6 @@ function clickProductRenderEvent() {
         pagination.removeAttribute('style');
 
       } else if (e.target.innerText === 'FUNCTIONAL') {
-        console.log(item);
         item.setAttribute('style', 'border-bottom-color: #AA0601; transition-duration: .3s');
 
         productCategory = productDatas.functional;
